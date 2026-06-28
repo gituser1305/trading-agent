@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>trading_agent · Flash's Portfolio Simulator</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #181c27;
+    --surface2: #1e2333;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.12);
+    --text: #e8eaf0;
+    --muted: #6b7280;
+    --subtle: #9ca3af;
+    --green: #22c55e;
+    --green-bg: rgba(34,197,94,0.1);
+    --red: #ef4444;
+    --red-bg: rgba(239,68,68,0.1);
+    --amber: #f59e0b;
+    --amber-bg: rgba(245,158,11,0.1);
+    --blue: #3b82f6;
+    --blue-bg: rgba(59,130,246,0.1);
+    --accent: #6366f1;
+    --accent-bg: rgba(99,102,241,0.12);
+    --radius: 10px;
+    --font: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 14px; line-height: 1.5; min-height: 100vh; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+  /* Layout */
+  .shell { max-width: 1280px; margin: 0 auto; padding: 24px 20px; }
+
+  /* Header */
+  .header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 28px; flex-wrap: wrap; gap: 12px; }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .logo { width: 40px; height: 40px; background: var(--accent-bg); border: 1px solid var(--accent); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .header-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
+  .header-sub { font-size: 12px; color: var(--muted); margin-top: 2px; font-family: var(--mono); }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .live-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .status-pill { display: flex; align-items: center; gap: 7px; background: var(--green-bg); border: 1px solid rgba(34,197,94,0.2); border-radius: 20px; padding: 5px 12px; font-size: 12px; color: var(--green); font-weight: 500; }
+  .status-pill.closed { background: var(--surface2); border-color: var(--border2); color: var(--muted); }
+  .refresh-info { font-size: 12px; color: var(--muted); font-family: var(--mono); }
+
+  /* Capital Control */
+  .capital-bar { background: var(--surface); border: 1px solid var(--border2); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .capital-label { font-size: 12px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; }
+  .capital-input-wrap { display: flex; align-items: center; gap: 8px; background: var(--bg); border: 1px solid var(--border2); border-radius: 8px; padding: 6px 12px; }
+  .capital-prefix { font-size: 15px; color: var(--muted); font-weight: 500; }
+  .capital-input { background: none; border: none; outline: none; color: var(--text); font-size: 18px; font-weight: 600; font-family: var(--mono); width: 130px; }
+  .capital-hint { font-size: 12px; color: var(--muted); }
+  .capital-hint b { color: var(--subtle); }
+  .apply-btn { background: var(--accent-bg); border: 1px solid var(--accent); color: #a5b4fc; border-radius: 8px; padding: 7px 16px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+  .apply-btn:hover { background: rgba(99,102,241,0.2); }
+
+  /* Summary Cards */
+  .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+  @media(max-width:768px){ .summary { grid-template-columns: repeat(2,1fr); } }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .card-label { font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+  .card-val { font-size: 24px; font-weight: 600; font-family: var(--mono); letter-spacing: -0.5px; }
+  .card-val.green { color: var(--green); }
+  .card-val.red { color: var(--red); }
+  .card-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .card-sub.green { color: var(--green); opacity: 0.8; }
+  .card-sub.red { color: var(--red); opacity: 0.8; }
+
+  /* Section header */
+  .section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .section-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+  .section-tag { font-size: 11px; color: var(--muted); font-family: var(--mono); background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; }
+
+  /* Positions Table */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 20px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 820px; }
+  thead th { background: var(--surface2); padding: 10px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  thead th:not(:first-child) { text-align: right; }
+  tbody td { padding: 13px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  tbody td:not(:first-child) { text-align: right; font-family: var(--mono); }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(255,255,255,0.02); }
+  .stock-name { font-weight: 500; font-size: 13px; color: var(--text); }
+  .stock-sym { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 2px; }
+  .alloc-wrap { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
+  .alloc-pct { font-size: 12px; font-family: var(--mono); }
+  .bar-track { width: 48px; height: 3px; background: var(--border2); border-radius: 2px; }
+  .bar-fill { height: 3px; border-radius: 2px; }
+  .pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; padding: 3px 9px; border-radius: 20px; font-weight: 500; white-space: nowrap; }
+  .pill-bull { background: var(--green-bg); color: var(--green); border: 1px solid rgba(34,197,94,0.2); }
+  .pill-bear { background: var(--red-bg); color: var(--red); border: 1px solid rgba(239,68,68,0.2); }
+  .pill-neutral { background: var(--surface2); color: var(--subtle); border: 1px solid var(--border2); }
+  .pill-warn { background: var(--amber-bg); color: var(--amber); border: 1px solid rgba(245,158,11,0.2); }
+  .pnl-pos { color: var(--green); font-weight: 500; }
+  .pnl-neg { color: var(--red); font-weight: 500; }
+  .rsi-bar-wrap { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
+  .rsi-track { width: 40px; height: 3px; background: var(--border2); border-radius: 2px; position: relative; }
+
+  /* Bottom grid */
+  .bottom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width:768px){ .bottom-grid { grid-template-columns: 1fr; } }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .log-list { margin-top: 8px; }
+  .log-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); gap: 8px; }
+  .log-row:last-child { border-bottom: none; }
+  .log-time { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
+  .log-desc { font-size: 12px; color: var(--subtle); flex: 1; }
+  .log-desc.warn { color: var(--amber); }
+  .log-desc.sold { color: var(--blue); }
+  .log-amt { font-size: 12px; font-family: var(--mono); font-weight: 500; white-space: nowrap; }
+  .score-row { display: flex; align-items: center; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--border); }
+  .score-row:last-child { border-bottom: none; }
+  .score-name { font-size: 13px; font-weight: 500; }
+  .score-right { display: flex; align-items: center; gap: 10px; }
+  .score-rsi { font-size: 11px; color: var(--muted); font-family: var(--mono); }
+  .score-val { font-size: 13px; font-weight: 600; font-family: var(--mono); }
+
+  /* Footer */
+  .footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .footer-note { font-size: 11px; color: var(--muted); }
+  .footer-id { font-size: 11px; color: var(--muted); font-family: var(--mono); }
+
+  /* Empty state */
+  .empty { text-align: center; padding: 48px 20px; color: var(--muted); }
+  .empty-icon { font-size: 36px; margin-bottom: 12px; }
+  .empty-title { font-size: 15px; font-weight: 500; color: var(--subtle); margin-bottom: 6px; }
+  .error-banner { background: var(--red-bg); border: 1px solid rgba(239,68,68,0.2); border-radius: 8px; padding: 10px 14px; font-size: 12px; color: var(--red); margin-bottom: 16px; display: none; }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">📈</div>
+      <div>
+        <div class="header-title">trading_agent</div>
+        <div class="header-sub" id="session-date">Loading session data…</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="status-pill" id="status-pill">
+        <div class="live-dot" id="live-dot"></div>
+        <span id="status-text">Connecting…</span>
+      </div>
+      <div class="refresh-info" id="refresh-info">—</div>
+    </div>
+  </div>
+
+  <!-- Error banner -->
+  <div class="error-banner" id="error-banner"></div>
+
+  <!-- Capital Control -->
+  <div class="capital-bar">
+    <div class="capital-label">Virtual capital</div>
+    <div class="capital-input-wrap">
+      <span class="capital-prefix">₹</span>
+      <input class="capital-input" type="number" id="capital-input" value="500000" min="10000" step="10000">
+    </div>
+    <button class="apply-btn" onclick="applyCapital()">Recalculate ↻</button>
+    <div class="capital-hint">Change the amount and click <b>Recalculate</b> to see how your P&amp;L shifts.</div>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="summary">
+    <div class="card">
+      <div class="card-label">Capital deployed</div>
+      <div class="card-val" id="card-capital">₹5,00,000</div>
+      <div class="card-sub">Virtual budget today</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Current value</div>
+      <div class="card-val" id="card-value">—</div>
+      <div class="card-sub" id="card-value-time">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Total P&amp;L</div>
+      <div class="card-val" id="card-pnl">—</div>
+      <div class="card-sub" id="card-pnl-pct">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Session</div>
+      <div class="card-val" style="font-size:14px;padding-top:4px" id="card-session">—</div>
+      <div class="card-sub" id="card-stoploss">Stop-loss: −10% per stock</div>
+    </div>
+  </div>
+
+  <!-- Positions Table -->
+  <div class="section-head">
+    <div class="section-title">Active positions</div>
+    <div class="section-tag" id="positions-count">0 stocks</div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Stock</th>
+          <th>Allocated</th>
+          <th>Allocation %</th>
+          <th>Buy price</th>
+          <th>Current price</th>
+          <th>Qty (virtual)</th>
+          <th>P&amp;L (₹)</th>
+          <th>P&amp;L %</th>
+          <th>Signal</th>
+        </tr>
+      </thead>
+      <tbody id="positions-body">
+        <tr><td colspan="9"><div class="empty"><div class="empty-icon">⏳</div><div class="empty-title">Waiting for agent data…</div><div>The Python agent will populate this once it starts running.</div></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bottom Grid -->
+  <div class="bottom-grid">
+    <!-- Activity Log -->
+    <div class="panel">
+      <div class="section-head">
+        <div class="section-title">Agent activity log</div>
+        <div class="section-tag" id="log-count">0 events</div>
+      </div>
+      <div class="log-list" id="log-list">
+        <div class="log-row"><span class="log-desc" style="color:var(--muted)">No activity yet — agent hasn't started.</span></div>
+      </div>
+    </div>
+
+    <!-- Confidence Scores -->
+    <div class="panel">
+      <div class="section-head">
+        <div class="section-title">Confidence scores (today)</div>
+        <div class="section-tag" id="scores-time">—</div>
+      </div>
+      <div id="scores-list">
+        <div class="score-row"><span class="score-name" style="color:var(--muted)">Scores appear after market analysis at 10:00 AM</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-note">⚠ This is a paper trading simulator. No real money is involved.</div>
+    <div class="footer-id" id="footer-updated">Last updated: —</div>
+  </div>
+
+</div>
+
+<script>
+// ─── CONFIG ───────────────────────────────────────────────────────────────────
+// Update this URL to point to your GitHub raw JSON file once agent is running
+const DATA_URL = 'data/portfolio.json';
+const REFRESH_MS = 2 * 60 * 1000; // 2 minutes
+
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let portfolioData = null;
+let capital = parseInt(document.getElementById('capital-input').value);
+let countdown = REFRESH_MS / 1000;
+let countdownTimer = null;
+
+// ─── HELPERS ──────────────────────────────────────────────────────────────────
+const fmt = (n, dec=0) => '₹' + Math.abs(n).toLocaleString('en-IN', {minimumFractionDigits:dec, maximumFractionDigits:dec});
+const fmtPct = (n, dec=2) => (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(dec) + '%';
+const fmtNum = (n) => Math.abs(n).toLocaleString('en-IN');
+
+function signColor(n) { return n >= 0 ? 'green' : 'red'; }
+
+function signedFmt(n, dec=0) {
+  return (n >= 0 ? '+' : '−') + fmt(n, dec).replace('₹','') ;
+}
+
+function pill(signal) {
+  if (!signal) return '';
+  const s = signal.toLowerCase();
+  if (s === 'bullish') return `<span class="pill pill-bull">▲ Bullish</span>`;
+  if (s === 'bearish') return `<span class="pill pill-bear">▼ Bearish</span>`;
+  if (s === 'warning') return `<span class="pill pill-warn">⚠ Watch</span>`;
+  return `<span class="pill pill-neutral">— Neutral</span>`;
+}
+
+function allocBar(pct, score) {
+  let color = score >= 0.7 ? '#22c55e' : score >= 0.5 ? '#f59e0b' : '#ef4444';
+  let width = Math.round(pct * 2.5);
+  return `<div class="bar-track"><div class="bar-fill" style="width:${Math.min(width,48)}px;background:${color}"></div></div>`;
+}
+
+function scoreColor(s) {
+  if (s >= 0.7) return 'var(--green)';
+  if (s >= 0.5) return 'var(--amber)';
+  return 'var(--red)';
+}
+
+// ─── RENDER ───────────────────────────────────────────────────────────────────
+function render(data, cap) {
+  if (!data || !data.positions) return;
+
+  const positions = data.positions;
+  const totalAllocPct = positions.reduce((s, p) => s + (p.allocation_pct || 0), 0);
+
+  // Recalculate based on current capital
+  let totalInvested = 0, totalCurrentVal = 0;
+  const enriched = positions.map(p => {
+    const allocated = cap * (p.allocation_pct / 100);
+    const qty = p.buy_price > 0 ? Math.floor(allocated / p.buy_price) : 0;
+    const invested = qty * p.buy_price;
+    const currentVal = qty * p.current_price;
+    const pnl = currentVal - invested;
+    const pnlPct = invested > 0 ? (pnl / invested) * 100 : 0;
+    totalInvested += invested;
+    totalCurrentVal += currentVal;
+    return { ...p, allocated, qty, invested, currentVal, pnl, pnlPct };
+  });
+
+  const totalPnl = totalCurrentVal - totalInvested;
+  const totalPnlPct = totalInvested > 0 ? (totalPnl / totalInvested) * 100 : 0;
+
+  // Summary cards
+  document.getElementById('card-capital').textContent = fmt(cap);
+  const valEl = document.getElementById('card-value');
+  valEl.textContent = fmt(totalCurrentVal);
+  valEl.className = 'card-val ' + signColor(totalPnl);
+  document.getElementById('card-value-time').textContent = 'As of ' + (data.last_updated || '—');
+
+  const pnlEl = document.getElementById('card-pnl');
+  pnlEl.textContent = (totalPnl >= 0 ? '+' : '−') + fmt(totalPnl);
+  pnlEl.className = 'card-val ' + signColor(totalPnl);
+  const pnlPctEl = document.getElementById('card-pnl-pct');
+  pnlPctEl.textContent = fmtPct(totalPnlPct);
+  pnlPctEl.className = 'card-sub ' + signColor(totalPnl);
+
+  document.getElementById('card-session').textContent = data.session_status || 'Open';
+  document.getElementById('card-stoploss').textContent = 'Stop-loss: −' + (data.stop_loss_pct || 10) + '% per stock';
+  document.getElementById('session-date').textContent = 'NSE · Intraday sim · ' + (data.session_date || '—');
+
+  // Status pill
+  const isLive = data.session_status === 'Live';
+  const pill_el = document.getElementById('status-pill');
+  const dot = document.getElementById('live-dot');
+  const statusText = document.getElementById('status-text');
+  if (isLive) {
+    pill_el.className = 'status-pill';
+    dot.style.display = 'block';
+    statusText.textContent = 'Live · Selling at ' + (data.sell_time || '15:20');
+  } else {
+    pill_el.className = 'status-pill closed';
+    dot.style.display = 'none';
+    statusText.textContent = data.session_status || 'Closed';
+  }
+
+  // Positions count
+  document.getElementById('positions-count').textContent = enriched.length + ' stocks';
+
+  // Positions table
+  const tbody = document.getElementById('positions-body');
+  if (enriched.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty"><div class="empty-title">No positions yet</div><div>Agent will buy stocks after 10:00 AM market analysis.</div></div></td></tr>`;
+  } else {
+    tbody.innerHTML = enriched.map(p => {
+      const signal = p.pnlPct <= -(data.stop_loss_pct || 10) ? 'warning' : p.signal;
+      return `
+      <tr>
+        <td>
+          <div class="stock-name">${p.name}</div>
+          <div class="stock-sym">${p.symbol}</div>
+        </td>
+        <td>${fmt(p.allocated)}</td>
+        <td>
+          <div class="alloc-wrap">
+            <span class="alloc-pct" style="color:${scoreColor(p.confidence_score)}">${p.allocation_pct}%</span>
+            ${allocBar(p.allocation_pct, p.confidence_score)}
+          </div>
+        </td>
+        <td>${fmt(p.buy_price, 2).replace('₹','₹')}</td>
+        <td>${fmt(p.current_price, 2).replace('₹','₹')}</td>
+        <td>${fmtNum(p.qty)}</td>
+        <td class="${p.pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${p.pnl >= 0 ? '+' : '−'}${fmt(Math.abs(p.pnl))}</td>
+        <td class="${p.pnlPct >= 0 ? 'pnl-pos' : 'pnl-neg'}">${fmtPct(p.pnlPct)}</td>
+        <td>${pill(signal)}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  // Activity log
+  const logs = data.activity_log || [];
+  document.getElementById('log-count').textContent = logs.length + ' events';
+  const logList = document.getElementById('log-list');
+  if (logs.length === 0) {
+    logList.innerHTML = `<div class="log-row"><span class="log-desc" style="color:var(--muted)">No activity yet.</span></div>`;
+  } else {
+    logList.innerHTML = [...logs].reverse().slice(0, 12).map(l => {
+      const cls = l.type === 'warning' ? 'warn' : l.type === 'sell' ? 'sold' : '';
+      return `<div class="log-row">
+        <span class="log-time">${l.time}</span>
+        <span class="log-desc ${cls}">${l.action}</span>
+        <span class="log-amt ${l.amount > 0 ? 'pnl-pos' : ''}">${l.amount ? fmt(Math.abs(l.amount)) : ''}</span>
+      </div>`;
+    }).join('');
+  }
+
+  // Confidence scores
+  const scores = data.confidence_scores || [];
+  document.getElementById('scores-time').textContent = data.analysis_time || '—';
+  const scoresList = document.getElementById('scores-list');
+  if (scores.length === 0) {
+    scoresList.innerHTML = `<div class="score-row"><span class="score-name" style="color:var(--muted)">Scores appear after 10:00 AM analysis.</span></div>`;
+  } else {
+    scoresList.innerHTML = [...scores].sort((a,b) => b.score - a.score).map(s => {
+      const col = scoreColor(s.score);
+      const signalPill = s.score >= 0.7 ? `<span class="pill pill-bull" style="font-size:11px">${s.score.toFixed(2)}</span>`
+        : s.score >= 0.5 ? `<span class="pill pill-warn" style="font-size:11px">${s.score.toFixed(2)}</span>`
+        : `<span class="pill pill-bear" style="font-size:11px">${s.score.toFixed(2)}</span>`;
+      return `<div class="score-row">
+        <span class="score-name">${s.symbol}</span>
+        <div class="score-right">
+          <span class="score-rsi">RSI ${s.rsi} · ${s.ma_signal}</span>
+          ${signalPill}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  document.getElementById('footer-updated').textContent = 'Last updated: ' + new Date().toLocaleTimeString('en-IN');
+}
+
+// ─── CAPITAL EDIT ─────────────────────────────────────────────────────────────
+function applyCapital() {
+  const val = parseInt(document.getElementById('capital-input').value);
+  if (!val || val < 10000) { alert('Please enter a valid capital amount (minimum ₹10,000)'); return; }
+  capital = val;
+  document.getElementById('card-capital').textContent = fmt(capital);
+  if (portfolioData) render(portfolioData, capital);
+}
+
+// Allow Enter key on capital input
+document.getElementById('capital-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') applyCapital();
+});
+
+// ─── FETCH DATA ───────────────────────────────────────────────────────────────
+async function fetchData() {
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    portfolioData = await res.json();
+    render(portfolioData, capital);
+    document.getElementById('error-banner').style.display = 'none';
+  } catch (e) {
+    const banner = document.getElementById('error-banner');
+    banner.style.display = 'block';
+    banner.textContent = 'Could not load portfolio data. The Python agent may not have run yet, or data/portfolio.json is missing. (' + e.message + ')';
+  }
+}
+
+// ─── COUNTDOWN TIMER ─────────────────────────────────────────────────────────
+function startCountdown() {
+  countdown = REFRESH_MS / 1000;
+  clearInterval(countdownTimer);
+  countdownTimer = setInterval(() => {
+    countdown--;
+    const m = Math.floor(countdown / 60);
+    const s = countdown % 60;
+    document.getElementById('refresh-info').textContent = `Next refresh in ${m}m ${s.toString().padStart(2,'0')}s`;
+    if (countdown <= 0) {
+      fetchData();
+      countdown = REFRESH_MS / 1000;
+    }
+  }, 1000);
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+fetchData();
+startCountdown();
+</script>
+</body>
+</html>
