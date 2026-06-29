@@ -1,7 +1,7 @@
 {
   "session_date": "2026-06-29",
   "session_status": "Live",
-  "last_updated": "--",
+  "last_updated": "11:54 AM",
   "analysis_time": "11:49 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 1500.6,
-      "current_price": 1500.6,
+      "current_price": 1498.5,
       "qty": 49,
       "invested": 73529.4,
-      "current_value": 73529.4,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "current_value": 73426.5,
+      "pnl": -102.9,
+      "pnl_pct": -0.14,
       "sold": false
     },
     {
@@ -28,12 +28,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 946.4,
-      "current_price": 946.4,
+      "current_price": 946.65,
       "qty": 79,
       "invested": 74765.6,
-      "current_value": 74765.6,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "current_value": 74785.35,
+      "pnl": 19.75,
+      "pnl_pct": 0.03,
       "sold": false
     },
     {
@@ -43,12 +43,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 7020.0,
-      "current_price": 7020.0,
+      "current_price": 7011.0,
       "qty": 10,
       "invested": 70200.0,
-      "current_value": 70200.0,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "current_value": 70110.0,
+      "pnl": -90.0,
+      "pnl_pct": -0.13,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3575.1,
-      "current_price": 3575.1,
+      "current_price": 3571.9,
       "qty": 20,
       "invested": 71502.0,
-      "current_value": 71502.0,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "current_value": 71438.0,
+      "pnl": -64.0,
+      "pnl_pct": -0.09,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3117.0,
-      "current_price": 3117.0,
+      "current_price": 3116.8,
       "qty": 24,
       "invested": 74808.0,
-      "current_value": 74808.0,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "current_value": 74803.2,
+      "pnl": -4.8,
+      "pnl_pct": -0.01,
       "sold": false
     },
     {
@@ -86,14 +86,14 @@
       "name": "TVS Motor Company Ltd",
       "allocation_pct": 15,
       "confidence_score": 0.54,
-      "signal": "Neutral",
+      "signal": "Bearish",
       "buy_price": 3465.9,
-      "current_price": 3465.9,
+      "current_price": 3454.4,
       "qty": 21,
       "invested": 72783.9,
-      "current_value": 72783.9,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "current_value": 72542.4,
+      "pnl": -241.5,
+      "pnl_pct": -0.33,
       "sold": false
     }
   ],
@@ -169,145 +169,37 @@
     {
       "symbol": "ADANIGREEN",
       "score": 0.66,
-      "rsi": 50.8,
+      "rsi": 51.1,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
       "score": 0.59,
-      "rsi": 62.7,
+      "rsi": 62.8,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ABB",
       "score": 0.58,
-      "rsi": 53.1,
+      "rsi": 52.4,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "score": 0.58,
-      "rsi": 52.9,
+      "rsi": 53.4,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "M&M",
       "score": 0.58,
-      "rsi": 63.6,
+      "rsi": 63.3,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "TVSMOTOR",
-      "score": 0.54,
-      "rsi": 61.2,
-      "ma_signal": "MA ↑"
-    },
-    {
-      "symbol": "VALIANTCO",
-      "score": 0.5,
-      "rsi": 50,
-      "ma_signal": "Insufficient data"
-    },
-    {
-      "symbol": "TATAMOTORS",
-      "score": 0.5,
-      "rsi": 50,
-      "ma_signal": "Insufficient data"
-    },
-    {
-      "symbol": "EICHERMOT",
-      "score": 0.47,
-      "rsi": 65.3,
-      "ma_signal": "MA ↑"
-    },
-    {
-      "symbol": "ASHOKA",
-      "score": 0.47,
-      "rsi": 67.7,
-      "ma_signal": "MA ↑"
-    },
-    {
-      "symbol": "TATASTEEL",
-      "score": 0.46,
-      "rsi": 36.6,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "TATASTEEL",
-      "score": 0.46,
-      "rsi": 36.7,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "GOLDBEES",
-      "score": 0.46,
-      "rsi": 31.7,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "INFY",
-      "score": 0.46,
-      "rsi": 28.3,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "HAL",
-      "score": 0.44,
-      "rsi": 54.0,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "BDL",
-      "score": 0.42,
-      "rsi": 72.4,
-      "ma_signal": "MA ↑"
-    },
-    {
-      "symbol": "BSE",
-      "score": 0.4,
-      "rsi": 48.5,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "ITI",
-      "score": 0.4,
-      "rsi": 50.7,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "SILVERADD",
-      "score": 0.37,
-      "rsi": 37.7,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "SILVERIETF",
-      "score": 0.37,
-      "rsi": 33.6,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "BRITANNIA",
       "score": 0.36,
-      "rsi": 60.3,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "RVNL",
-      "score": 0.33,
-      "rsi": 59.3,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "KAYNES",
-      "score": 0.33,
-      "rsi": 61.5,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "BEL",
-      "score": 0.32,
-      "rsi": 45.0,
+      "rsi": 59.9,
       "ma_signal": "MA ↓↓"
     }
   ]
