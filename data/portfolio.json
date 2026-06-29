@@ -1,7 +1,7 @@
 {
   "session_date": "2026-06-29",
   "session_status": "Live",
-  "last_updated": "12:15 PM",
+  "last_updated": "12:17 PM",
   "analysis_time": "11:49 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 1500.6,
-      "current_price": 1500.9,
+      "current_price": 1498.9,
       "qty": 49,
       "invested": 73529.4,
-      "current_value": 73544.1,
-      "pnl": 14.7,
-      "pnl_pct": 0.02,
+      "current_value": 73446.1,
+      "pnl": -83.3,
+      "pnl_pct": -0.11,
       "sold": false
     },
     {
@@ -28,12 +28,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 946.4,
-      "current_price": 942.0,
+      "current_price": 941.3,
       "qty": 79,
       "invested": 74765.6,
-      "current_value": 74418.0,
-      "pnl": -347.6,
-      "pnl_pct": -0.46,
+      "current_value": 74362.7,
+      "pnl": -402.9,
+      "pnl_pct": -0.54,
       "sold": false
     },
     {
@@ -43,12 +43,12 @@
       "confidence_score": 0.58,
       "signal": "Bearish",
       "buy_price": 7020.0,
-      "current_price": 6989.0,
+      "current_price": 6987.0,
       "qty": 10,
       "invested": 70200.0,
-      "current_value": 69890.0,
-      "pnl": -310.0,
-      "pnl_pct": -0.44,
+      "current_value": 69870.0,
+      "pnl": -330.0,
+      "pnl_pct": -0.47,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3575.1,
-      "current_price": 3562.1,
+      "current_price": 3559.0,
       "qty": 20,
       "invested": 71502.0,
-      "current_value": 71242.0,
-      "pnl": -260.0,
-      "pnl_pct": -0.36,
+      "current_value": 71180.0,
+      "pnl": -322.0,
+      "pnl_pct": -0.45,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3117.0,
-      "current_price": 3113.1,
+      "current_price": 3112.2,
       "qty": 24,
       "invested": 74808.0,
-      "current_value": 74714.4,
-      "pnl": -93.6,
-      "pnl_pct": -0.13,
+      "current_value": 74692.8,
+      "pnl": -115.2,
+      "pnl_pct": -0.15,
       "sold": false
     },
     {
@@ -88,12 +88,12 @@
       "confidence_score": 0.54,
       "signal": "Neutral",
       "buy_price": 3465.9,
-      "current_price": 3470.9,
+      "current_price": 3477.0,
       "qty": 21,
       "invested": 72783.9,
-      "current_value": 72888.9,
-      "pnl": 105.0,
-      "pnl_pct": 0.14,
+      "current_value": 73017.0,
+      "pnl": 233.1,
+      "pnl_pct": 0.32,
       "sold": false
     }
   ],
@@ -169,31 +169,31 @@
     {
       "symbol": "ADANIGREEN",
       "score": 0.66,
-      "rsi": 51.5,
+      "rsi": 51.2,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
       "score": 0.59,
-      "rsi": 61.7,
+      "rsi": 61.4,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "score": 0.58,
-      "rsi": 52.9,
+      "rsi": 52.8,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "M&M",
       "score": 0.58,
-      "rsi": 62.9,
+      "rsi": 62.8,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "TVSMOTOR",
       "score": 0.54,
-      "rsi": 61.6,
+      "rsi": 62.1,
       "ma_signal": "MA ↑"
     },
     {
