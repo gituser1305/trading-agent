@@ -258,9 +258,13 @@ const REFRESH_MS = 2 * 60 * 1000; // 2 minutes
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 let portfolioData = null;
-let capital = parseInt(document.getElementById('capital-input').value);
 let countdown = REFRESH_MS / 1000;
 let countdownTimer = null;
+
+// Load saved capital from sessionStorage (persists across refreshes in same session)
+const savedCapital = sessionStorage.getItem('trading_agent_capital');
+let capital = savedCapital ? parseInt(savedCapital) : 500000;
+document.getElementById('capital-input').value = capital;
 
 // ─── HELPERS ──────────────────────────────────────────────────────────────────
 const fmt = (n, dec=0) => '₹' + Math.abs(n).toLocaleString('en-IN', {minimumFractionDigits:dec, maximumFractionDigits:dec});
@@ -345,10 +349,22 @@ function render(data, cap) {
     pill_el.className = 'status-pill';
     dot.style.display = 'block';
     statusText.textContent = 'Live · Selling at ' + (data.sell_time || '15:20');
-  } else {
+  } else if ((data.session_status || '').includes('Analysing')) {
+    pill_el.className = 'status-pill';
+    pill_el.style.background = 'rgba(245,158,11,0.1)';
+    pill_el.style.borderColor = 'rgba(245,158,11,0.3)';
+    dot.style.background = '#f59e0b';
+    dot.style.display = 'block';
+    statusText.style.color = '#f59e0b';
+    statusText.textContent = 'Analysing · Buying at 10:00 AM';
+  } else if ((data.session_status || '').includes('Closed')) {
     pill_el.className = 'status-pill closed';
     dot.style.display = 'none';
     statusText.textContent = data.session_status || 'Closed';
+  } else {
+    pill_el.className = 'status-pill closed';
+    dot.style.display = 'none';
+    statusText.textContent = data.session_status || 'Waiting';
   }
 
   // Positions count
@@ -357,7 +373,13 @@ function render(data, cap) {
   // Positions table
   const tbody = document.getElementById('positions-body');
   if (enriched.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="9"><div class="empty"><div class="empty-title">No positions yet</div><div>Agent will buy stocks after 10:00 AM market analysis.</div></div></td></tr>`;
+    const status = data.session_status || '';
+    const emptyMsg = status.includes('Analysing')
+      ? '📊 Analysis in progress — stocks will be bought at 10:00 AM. See confidence scores below ↓'
+      : status.includes('Waiting')
+      ? '⏳ Waiting for market to open at 09:30 AM IST.'
+      : 'No positions yet.';
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty"><div class="empty-title">${emptyMsg}</div></div></td></tr>`;
   } else {
     tbody.innerHTML = enriched.map(p => {
       const signal = p.pnlPct <= -(data.stop_loss_pct || 10) ? 'warning' : p.signal;
@@ -431,6 +453,7 @@ function applyCapital() {
   const val = parseInt(document.getElementById('capital-input').value);
   if (!val || val < 10000) { alert('Please enter a valid capital amount (minimum ₹10,000)'); return; }
   capital = val;
+  sessionStorage.setItem('trading_agent_capital', capital);
   document.getElementById('card-capital').textContent = fmt(capital);
   if (portfolioData) render(portfolioData, capital);
 }
