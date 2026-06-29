@@ -1,166 +1,21 @@
 {
   "session_date": "2026-06-29",
-  "session_status": "Live",
-  "last_updated": "12:19 PM",
-  "analysis_time": "11:49 AM",
+  "session_status": "Analysing · Buying at 10:00 AM",
+  "last_updated": "--",
+  "analysis_time": "12:22 PM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
-  "positions": [
-    {
-      "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.66,
-      "signal": "Bullish",
-      "buy_price": 1500.6,
-      "current_price": 1497.0,
-      "qty": 49,
-      "invested": 73529.4,
-      "current_value": 73353.0,
-      "pnl": -176.4,
-      "pnl_pct": -0.24,
-      "sold": false
-    },
-    {
-      "symbol": "CGPOWER",
-      "name": "CG Power & Industrial Solutions Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.59,
-      "signal": "Neutral",
-      "buy_price": 946.4,
-      "current_price": 943.15,
-      "qty": 79,
-      "invested": 74765.6,
-      "current_value": 74508.85,
-      "pnl": -256.75,
-      "pnl_pct": -0.34,
-      "sold": false
-    },
-    {
-      "symbol": "ABB",
-      "name": "ABB India Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.58,
-      "signal": "Neutral",
-      "buy_price": 7020.0,
-      "current_price": 6996.5,
-      "qty": 10,
-      "invested": 70200.0,
-      "current_value": 69965.0,
-      "pnl": -235.0,
-      "pnl_pct": -0.33,
-      "sold": false
-    },
-    {
-      "symbol": "ENRIN",
-      "name": "Siemens Energy India Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.58,
-      "signal": "Neutral",
-      "buy_price": 3575.1,
-      "current_price": 3555.7,
-      "qty": 20,
-      "invested": 71502.0,
-      "current_value": 71114.0,
-      "pnl": -388.0,
-      "pnl_pct": -0.54,
-      "sold": false
-    },
-    {
-      "symbol": "M&M",
-      "name": "Mahindra & Mahindra Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.58,
-      "signal": "Bearish",
-      "buy_price": 3117.0,
-      "current_price": 3107.9,
-      "qty": 24,
-      "invested": 74808.0,
-      "current_value": 74589.6,
-      "pnl": -218.4,
-      "pnl_pct": -0.29,
-      "sold": false
-    },
-    {
-      "symbol": "TVSMOTOR",
-      "name": "TVS Motor Company Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.54,
-      "signal": "Neutral",
-      "buy_price": 3465.9,
-      "current_price": 3469.6,
-      "qty": 21,
-      "invested": 72783.9,
-      "current_value": 72861.6,
-      "pnl": 77.7,
-      "pnl_pct": 0.11,
-      "sold": false
-    }
-  ],
+  "positions": [],
   "activity_log": [
     {
-      "time": "11:49 AM",
+      "time": "12:21 PM",
       "action": "Analysis started · calculating RSI, MA, momentum for all stocks",
       "amount": 0,
       "type": "info"
     },
     {
-      "time": "11:49 AM",
+      "time": "12:22 PM",
       "action": "Analysis complete · Top 7: ADANIGREEN, CGPOWER, ABB, ENRIN, M&M, TVSMOTOR, VALIANTCO",
-      "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "11:51 AM",
-      "action": "Buying top 7 stocks now",
-      "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Bought ADANIGREEN · 49 qty @ ₹1500.6 · confidence 0.66",
-      "amount": 73529.4,
-      "type": "buy"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Bought CGPOWER · 79 qty @ ₹946.4 · confidence 0.59",
-      "amount": 74765.6,
-      "type": "buy"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Bought ABB · 10 qty @ ₹7020.0 · confidence 0.58",
-      "amount": 70200.0,
-      "type": "buy"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Bought ENRIN · 20 qty @ ₹3575.1 · confidence 0.58",
-      "amount": 71502.0,
-      "type": "buy"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Bought M&M · 24 qty @ ₹3117.0 · confidence 0.58",
-      "amount": 74808.0,
-      "type": "buy"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Bought TVSMOTOR · 21 qty @ ₹3465.9 · confidence 0.54",
-      "amount": 72783.9,
-      "type": "buy"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "Skipped VALIANTCO — price unavailable",
-      "amount": 0,
-      "type": "warning"
-    },
-    {
-      "time": "11:52 AM",
-      "action": "All bought · 6 stocks · ₹437,589 deployed",
       "amount": 0,
       "type": "info"
     }
@@ -169,37 +24,145 @@
     {
       "symbol": "ADANIGREEN",
       "score": 0.66,
-      "rsi": 50.9,
+      "rsi": 51.1,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
       "score": 0.59,
-      "rsi": 61.9,
+      "rsi": 62.5,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ABB",
       "score": 0.58,
-      "rsi": 51.9,
+      "rsi": 52.0,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "score": 0.58,
-      "rsi": 52.6,
+      "rsi": 52.7,
       "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "M&M",
+      "score": 0.58,
+      "rsi": 62.6,
+      "ma_signal": "MA ↑"
     },
     {
       "symbol": "TVSMOTOR",
       "score": 0.54,
-      "rsi": 61.4,
+      "rsi": 61.2,
       "ma_signal": "MA ↑"
     },
     {
-      "symbol": "M&M",
+      "symbol": "VALIANTCO",
+      "score": 0.5,
+      "rsi": 50,
+      "ma_signal": "Insufficient data"
+    },
+    {
+      "symbol": "TATAMOTORS",
+      "score": 0.5,
+      "rsi": 50,
+      "ma_signal": "Insufficient data"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "score": 0.47,
+      "rsi": 65.6,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "ASHOKA",
+      "score": 0.47,
+      "rsi": 67.4,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "score": 0.46,
+      "rsi": 37.5,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "score": 0.46,
+      "rsi": 37.5,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "GOLDBEES",
+      "score": 0.46,
+      "rsi": 32.3,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "INFY",
+      "score": 0.46,
+      "rsi": 28.2,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "HAL",
+      "score": 0.44,
+      "rsi": 54.3,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "BDL",
+      "score": 0.42,
+      "rsi": 71.5,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "BSE",
       "score": 0.4,
-      "rsi": 62.4,
+      "rsi": 47.0,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "ITI",
+      "score": 0.4,
+      "rsi": 49.9,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "SILVERADD",
+      "score": 0.37,
+      "rsi": 37.4,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "SILVERIETF",
+      "score": 0.37,
+      "rsi": 33.3,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "score": 0.36,
+      "rsi": 56.6,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "RVNL",
+      "score": 0.33,
+      "rsi": 58.6,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "KAYNES",
+      "score": 0.33,
+      "rsi": 60.2,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "BEL",
+      "score": 0.32,
+      "rsi": 45.3,
       "ma_signal": "MA ↓↓"
     }
   ]
