@@ -1,7 +1,7 @@
 {
   "session_date": "2026-06-29",
   "session_status": "Live",
-  "last_updated": "03:04 PM",
+  "last_updated": "03:07 PM",
   "analysis_time": "12:22 PM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 1497.5,
-      "current_price": 1501.0,
+      "current_price": 1501.8,
       "qty": 50,
       "invested": 74875.0,
-      "current_value": 75050.0,
-      "pnl": 175.0,
-      "pnl_pct": 0.23,
+      "current_value": 75090.0,
+      "pnl": 215.0,
+      "pnl_pct": 0.29,
       "sold": false
     },
     {
@@ -28,27 +28,27 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 944.7,
-      "current_price": 948.35,
+      "current_price": 950.85,
       "qty": 79,
       "invested": 74631.3,
-      "current_value": 74919.65,
-      "pnl": 288.35,
-      "pnl_pct": 0.39,
+      "current_value": 75117.15,
+      "pnl": 485.85,
+      "pnl_pct": 0.65,
       "sold": false
     },
     {
       "symbol": "ABB",
       "name": "ABB India Ltd",
       "allocation_pct": 15,
-      "confidence_score": 0.59,
+      "confidence_score": 0.62,
       "signal": "Neutral",
       "buy_price": 6999.0,
-      "current_price": 7139.0,
+      "current_price": 7180.5,
       "qty": 10,
       "invested": 69990.0,
-      "current_value": 71390.0,
-      "pnl": 1400.0,
-      "pnl_pct": 2.0,
+      "current_value": 71805.0,
+      "pnl": 1815.0,
+      "pnl_pct": 2.59,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3559.8,
-      "current_price": 3576.7,
+      "current_price": 3584.1,
       "qty": 21,
       "invested": 74755.8,
-      "current_value": 75110.7,
-      "pnl": 354.9,
-      "pnl_pct": 0.47,
+      "current_value": 75266.1,
+      "pnl": 510.3,
+      "pnl_pct": 0.68,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.36,
       "signal": "Bearish",
       "buy_price": 3110.7,
-      "current_price": 3093.1,
+      "current_price": 3089.9,
       "qty": 24,
       "invested": 74656.8,
-      "current_value": 74234.4,
-      "pnl": -422.4,
-      "pnl_pct": -0.57,
+      "current_value": 74157.6,
+      "pnl": -499.2,
+      "pnl_pct": -0.67,
       "sold": false
     },
     {
@@ -88,12 +88,12 @@
       "confidence_score": 0.36,
       "signal": "Bearish",
       "buy_price": 3469.7,
-      "current_price": 3459.3,
+      "current_price": 3453.6,
       "qty": 21,
       "invested": 72863.7,
-      "current_value": 72645.3,
-      "pnl": -218.4,
-      "pnl_pct": -0.3,
+      "current_value": 72525.6,
+      "pnl": -338.1,
+      "pnl_pct": -0.46,
       "sold": false
     }
   ],
@@ -176,22 +176,22 @@
     {
       "symbol": "ABB",
       "name": "ABB India Ltd",
-      "score": 0.59,
-      "rsi": 57.5,
+      "score": 0.62,
+      "rsi": 58.8,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
       "name": "CG Power & Industrial Solutions Ltd",
       "score": 0.59,
-      "rsi": 63.2,
+      "rsi": 64.0,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Energy India Ltd",
       "score": 0.58,
-      "rsi": 53.9,
+      "rsi": 54.0,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -212,63 +212,63 @@
       "symbol": "EICHERMOT",
       "name": "Eicher Motors Ltd",
       "score": 0.47,
-      "rsi": 65.6,
+      "rsi": 65.7,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "ASHOKA",
       "name": "Ashoka Buildcon Ltd",
       "score": 0.47,
-      "rsi": 67.7,
+      "rsi": 67.8,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "BDL",
       "name": "Bharat Dynamics Ltd",
       "score": 0.47,
-      "rsi": 69.7,
+      "rsi": 69.9,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Motors Ltd",
       "score": 0.46,
-      "rsi": 33.3,
+      "rsi": 32.9,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel Ltd",
       "score": 0.46,
-      "rsi": 33.3,
+      "rsi": 32.8,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "GOLDBEES",
       "name": "Nippon India ETF Gold Bees",
       "score": 0.46,
-      "rsi": 32.0,
+      "rsi": 32.1,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "INFY",
       "name": "Infosys Ltd",
       "score": 0.46,
-      "rsi": 28.8,
+      "rsi": 28.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd",
       "score": 0.41,
-      "rsi": 55.7,
+      "rsi": 56.2,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd",
       "score": 0.4,
-      "rsi": 46.4,
+      "rsi": 46.6,
       "ma_signal": "MA ↓"
     },
     {
@@ -282,35 +282,35 @@
       "symbol": "SILVERADD",
       "name": "DSP Silver ETF",
       "score": 0.37,
-      "rsi": 36.8,
+      "rsi": 36.7,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "SILVERIETF",
       "name": "ICICI Prudential Silver ETF",
       "score": 0.37,
-      "rsi": 32.7,
+      "rsi": 32.6,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Company Ltd",
       "score": 0.36,
-      "rsi": 60.3,
+      "rsi": 59.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "M&M",
       "name": "Mahindra & Mahindra Ltd",
       "score": 0.36,
-      "rsi": 60.8,
+      "rsi": 60.5,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BRITANNIA",
       "name": "Britannia Industries Ltd",
       "score": 0.36,
-      "rsi": 51.9,
+      "rsi": 51.6,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -324,14 +324,14 @@
       "symbol": "BEL",
       "name": "Bharat Electronics Ltd",
       "score": 0.32,
-      "rsi": 48.5,
+      "rsi": 48.8,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "KAYNES",
       "name": "Kaynes Technology India Ltd",
       "score": 0.29,
-      "rsi": 56.7,
+      "rsi": 56.9,
       "ma_signal": "MA ↓↓"
     }
   ]
