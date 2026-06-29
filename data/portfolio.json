@@ -1,7 +1,7 @@
 {
   "session_date": "2026-06-29",
-  "session_status": "Live",
-  "last_updated": "03:18 PM",
+  "session_status": "Closed · Day P&L: +0.58%",
+  "last_updated": "03:21 PM",
   "analysis_time": "12:22 PM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,13 +13,13 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 1497.5,
-      "current_price": 1503.2,
+      "current_price": 1503.4,
       "qty": 50,
       "invested": 74875.0,
-      "current_value": 75160.0,
-      "pnl": 285.0,
-      "pnl_pct": 0.38,
-      "sold": false
+      "current_value": 75170.0,
+      "pnl": 295.0,
+      "pnl_pct": 0.39,
+      "sold": true
     },
     {
       "symbol": "CGPOWER",
@@ -28,13 +28,13 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 944.7,
-      "current_price": 957.55,
+      "current_price": 962.9,
       "qty": 79,
       "invested": 74631.3,
-      "current_value": 75646.45,
-      "pnl": 1015.15,
-      "pnl_pct": 1.36,
-      "sold": false
+      "current_value": 76069.1,
+      "pnl": 1437.8,
+      "pnl_pct": 1.93,
+      "sold": true
     },
     {
       "symbol": "ABB",
@@ -43,13 +43,13 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 6999.0,
-      "current_price": 7093.0,
+      "current_price": 7100.0,
       "qty": 10,
       "invested": 69990.0,
-      "current_value": 70930.0,
-      "pnl": 940.0,
-      "pnl_pct": 1.34,
-      "sold": false
+      "current_value": 71000.0,
+      "pnl": 1010.0,
+      "pnl_pct": 1.44,
+      "sold": true
     },
     {
       "symbol": "ENRIN",
@@ -58,13 +58,13 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3559.8,
-      "current_price": 3584.0,
+      "current_price": 3584.5,
       "qty": 21,
       "invested": 74755.8,
-      "current_value": 75264.0,
-      "pnl": 508.2,
-      "pnl_pct": 0.68,
-      "sold": false
+      "current_value": 75274.5,
+      "pnl": 518.7,
+      "pnl_pct": 0.69,
+      "sold": true
     },
     {
       "symbol": "M&M",
@@ -79,7 +79,7 @@
       "current_value": 74306.4,
       "pnl": -350.4,
       "pnl_pct": -0.47,
-      "sold": false
+      "sold": true
     },
     {
       "symbol": "TVSMOTOR",
@@ -88,13 +88,13 @@
       "confidence_score": 0.36,
       "signal": "Bearish",
       "buy_price": 3469.7,
-      "current_price": 3452.2,
+      "current_price": 3453.6,
       "qty": 21,
       "invested": 72863.7,
-      "current_value": 72496.2,
-      "pnl": -367.5,
-      "pnl_pct": -0.5,
-      "sold": false
+      "current_value": 72525.6,
+      "pnl": -338.1,
+      "pnl_pct": -0.46,
+      "sold": true
     }
   ],
   "activity_log": [
@@ -163,6 +163,48 @@
       "action": "All bought · 6 stocks · ₹441,773 deployed",
       "amount": 0,
       "type": "info"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Sold ADANIGREEN · 50 qty @ ₹1503.4 · +0.39%",
+      "amount": 75170.0,
+      "type": "sell"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Sold CGPOWER · 79 qty @ ₹962.9 · +1.93%",
+      "amount": 76069.1,
+      "type": "sell"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Sold ABB · 10 qty @ ₹7100.0 · +1.44%",
+      "amount": 71000.0,
+      "type": "sell"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Sold ENRIN · 21 qty @ ₹3584.5 · +0.69%",
+      "amount": 75274.5,
+      "type": "sell"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Sold M&M · 24 qty @ ₹3096.1 · -0.47%",
+      "amount": 74306.4,
+      "type": "sell"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Sold TVSMOTOR · 21 qty @ ₹3453.6 · -0.46%",
+      "amount": 72525.6,
+      "type": "sell"
+    },
+    {
+      "time": "03:21 PM",
+      "action": "Day complete · Total P&L: ₹+2,573 (+0.58%)",
+      "amount": 2573.0,
+      "type": "info"
     }
   ],
   "confidence_scores": [
@@ -184,14 +226,14 @@
       "symbol": "CGPOWER",
       "name": "CG Power & Industrial Solutions Ltd",
       "score": 0.59,
-      "rsi": 65.1,
+      "rsi": 65.6,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Energy India Ltd",
       "score": 0.58,
-      "rsi": 54.0,
+      "rsi": 54.1,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -212,21 +254,28 @@
       "symbol": "EICHERMOT",
       "name": "Eicher Motors Ltd",
       "score": 0.47,
-      "rsi": 65.8,
+      "rsi": 66.2,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "ASHOKA",
       "name": "Ashoka Buildcon Ltd",
       "score": 0.47,
-      "rsi": 68.2,
+      "rsi": 67.4,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "BDL",
+      "name": "Bharat Dynamics Ltd",
+      "score": 0.47,
+      "rsi": 69.3,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Motors Ltd",
       "score": 0.46,
-      "rsi": 35.3,
+      "rsi": 35.4,
       "ma_signal": "MA ↓"
     },
     {
@@ -240,7 +289,7 @@
       "symbol": "GOLDBEES",
       "name": "Nippon India ETF Gold Bees",
       "score": 0.46,
-      "rsi": 31.8,
+      "rsi": 31.5,
       "ma_signal": "MA ↓"
     },
     {
@@ -251,45 +300,38 @@
       "ma_signal": "MA ↓↓"
     },
     {
-      "symbol": "BDL",
-      "name": "Bharat Dynamics Ltd",
-      "score": 0.43,
-      "rsi": 68.9,
-      "ma_signal": "MA ↑"
-    },
-    {
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd",
       "score": 0.41,
-      "rsi": 57.1,
+      "rsi": 57.4,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd",
       "score": 0.4,
-      "rsi": 46.4,
+      "rsi": 46.6,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "ITI",
       "name": "ITI Ltd",
       "score": 0.4,
-      "rsi": 49.6,
+      "rsi": 49.1,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "SILVERADD",
       "name": "DSP Silver ETF",
       "score": 0.37,
-      "rsi": 36.5,
+      "rsi": 36.4,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "SILVERIETF",
       "name": "ICICI Prudential Silver ETF",
       "score": 0.37,
-      "rsi": 32.2,
+      "rsi": 31.9,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -310,21 +352,21 @@
       "symbol": "BRITANNIA",
       "name": "Britannia Industries Ltd",
       "score": 0.36,
-      "rsi": 51.7,
+      "rsi": 51.1,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "RVNL",
       "name": "Rail Vikas Nigam Ltd",
       "score": 0.33,
-      "rsi": 57.9,
+      "rsi": 57.7,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BEL",
       "name": "Bharat Electronics Ltd",
       "score": 0.32,
-      "rsi": 49.3,
+      "rsi": 49.2,
       "ma_signal": "MA ↓↓"
     },
     {
