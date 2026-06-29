@@ -1,7 +1,7 @@
 {
   "session_date": "2026-06-29",
   "session_status": "Live",
-  "last_updated": "12:07 PM",
+  "last_updated": "12:09 PM",
   "analysis_time": "11:49 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 1500.6,
-      "current_price": 1495.2,
+      "current_price": 1496.9,
       "qty": 49,
       "invested": 73529.4,
-      "current_value": 73264.8,
-      "pnl": -264.6,
-      "pnl_pct": -0.36,
+      "current_value": 73348.1,
+      "pnl": -181.3,
+      "pnl_pct": -0.25,
       "sold": false
     },
     {
@@ -28,12 +28,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 946.4,
-      "current_price": 945.25,
+      "current_price": 944.45,
       "qty": 79,
       "invested": 74765.6,
-      "current_value": 74674.75,
-      "pnl": -90.85,
-      "pnl_pct": -0.12,
+      "current_value": 74611.55,
+      "pnl": -154.05,
+      "pnl_pct": -0.21,
       "sold": false
     },
     {
@@ -41,14 +41,14 @@
       "name": "ABB India Ltd",
       "allocation_pct": 15,
       "confidence_score": 0.58,
-      "signal": "Neutral",
+      "signal": "Bearish",
       "buy_price": 7020.0,
-      "current_price": 6994.5,
+      "current_price": 6986.0,
       "qty": 10,
       "invested": 70200.0,
-      "current_value": 69945.0,
-      "pnl": -255.0,
-      "pnl_pct": -0.36,
+      "current_value": 69860.0,
+      "pnl": -340.0,
+      "pnl_pct": -0.48,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3575.1,
-      "current_price": 3563.6,
+      "current_price": 3560.9,
       "qty": 20,
       "invested": 71502.0,
-      "current_value": 71272.0,
-      "pnl": -230.0,
-      "pnl_pct": -0.32,
+      "current_value": 71218.0,
+      "pnl": -284.0,
+      "pnl_pct": -0.4,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3117.0,
-      "current_price": 3114.4,
+      "current_price": 3113.3,
       "qty": 24,
       "invested": 74808.0,
-      "current_value": 74745.6,
-      "pnl": -62.4,
-      "pnl_pct": -0.08,
+      "current_value": 74719.2,
+      "pnl": -88.8,
+      "pnl_pct": -0.12,
       "sold": false
     },
     {
@@ -88,12 +88,12 @@
       "confidence_score": 0.54,
       "signal": "Bearish",
       "buy_price": 3465.9,
-      "current_price": 3452.6,
+      "current_price": 3453.1,
       "qty": 21,
       "invested": 72783.9,
-      "current_value": 72504.6,
-      "pnl": -279.3,
-      "pnl_pct": -0.38,
+      "current_value": 72515.1,
+      "pnl": -268.8,
+      "pnl_pct": -0.37,
       "sold": false
     }
   ],
@@ -169,25 +169,19 @@
     {
       "symbol": "ADANIGREEN",
       "score": 0.66,
-      "rsi": 50.7,
+      "rsi": 50.9,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
       "score": 0.59,
-      "rsi": 62.4,
-      "ma_signal": "MA ↑↑"
-    },
-    {
-      "symbol": "ABB",
-      "score": 0.58,
-      "rsi": 51.7,
+      "rsi": 62.3,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "score": 0.58,
-      "rsi": 53.0,
+      "rsi": 52.9,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -197,9 +191,15 @@
       "ma_signal": "MA ↑"
     },
     {
+      "symbol": "ABB",
+      "score": 0.4,
+      "rsi": 51.3,
+      "ma_signal": "MA ↓"
+    },
+    {
       "symbol": "TVSMOTOR",
       "score": 0.36,
-      "rsi": 59.9,
+      "rsi": 60.0,
       "ma_signal": "MA ↓↓"
     }
   ]
