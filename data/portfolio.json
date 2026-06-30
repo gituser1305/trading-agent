@@ -1,7 +1,7 @@
 {
   "session_date": "2026-06-30",
   "session_status": "Live",
-  "last_updated": "10:50 AM",
+  "last_updated": "10:52 AM",
   "analysis_time": "10:22 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -10,15 +10,15 @@
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Ltd",
       "allocation_pct": 15,
-      "confidence_score": 0.62,
-      "signal": "Neutral",
+      "confidence_score": 0.66,
+      "signal": "Bullish",
       "buy_price": 1495.5,
-      "current_price": 1494.8,
+      "current_price": 1498.0,
       "qty": 50,
       "invested": 74775.0,
-      "current_value": 74740.0,
-      "pnl": -35.0,
-      "pnl_pct": -0.05,
+      "current_value": 74900.0,
+      "pnl": 125.0,
+      "pnl_pct": 0.17,
       "sold": false
     },
     {
@@ -28,12 +28,12 @@
       "confidence_score": 0.62,
       "signal": "Neutral",
       "buy_price": 959.3,
-      "current_price": 958.5,
+      "current_price": 957.0,
       "qty": 78,
       "invested": 74825.4,
-      "current_value": 74763.0,
-      "pnl": -62.4,
-      "pnl_pct": -0.08,
+      "current_value": 74646.0,
+      "pnl": -179.4,
+      "pnl_pct": -0.24,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.4,
       "signal": "Bearish",
       "buy_price": 3105.1,
-      "current_price": 3100.0,
+      "current_price": 3100.9,
       "qty": 24,
       "invested": 74522.4,
-      "current_value": 74400.0,
-      "pnl": -122.4,
-      "pnl_pct": -0.16,
+      "current_value": 74421.6,
+      "pnl": -100.8,
+      "pnl_pct": -0.14,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.55,
       "signal": "Neutral",
       "buy_price": 3669.3,
-      "current_price": 3677.1,
+      "current_price": 3678.4,
       "qty": 20,
       "invested": 73386.0,
-      "current_value": 73542.0,
-      "pnl": 156.0,
-      "pnl_pct": 0.21,
+      "current_value": 73568.0,
+      "pnl": 182.0,
+      "pnl_pct": 0.25,
       "sold": false
     },
     {
@@ -88,12 +88,12 @@
       "confidence_score": 0.54,
       "signal": "Neutral",
       "buy_price": 3464.3,
-      "current_price": 3479.8,
+      "current_price": 3478.9,
       "qty": 21,
       "invested": 72750.3,
-      "current_value": 73075.8,
-      "pnl": 325.5,
-      "pnl_pct": 0.45,
+      "current_value": 73056.9,
+      "pnl": 306.6,
+      "pnl_pct": 0.42,
       "sold": false
     }
   ],
@@ -169,15 +169,15 @@
     {
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Ltd",
-      "score": 0.62,
-      "rsi": 52.3,
+      "score": 0.66,
+      "rsi": 52.9,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ABB",
       "name": "ABB India Ltd",
       "score": 0.62,
-      "rsi": 54.4,
+      "rsi": 54.3,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -188,10 +188,17 @@
       "ma_signal": "MA ↑↑"
     },
     {
+      "symbol": "ITI",
+      "name": "ITI Ltd",
+      "score": 0.58,
+      "rsi": 48.3,
+      "ma_signal": "MA ↑↑"
+    },
+    {
       "symbol": "ENRIN",
       "name": "Siemens Energy India Ltd",
       "score": 0.55,
-      "rsi": 56.1,
+      "rsi": 56.0,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -219,21 +226,21 @@
       "symbol": "TATASTEEL",
       "name": "Tata Motors Ltd",
       "score": 0.49,
-      "rsi": 36.1,
+      "rsi": 35.9,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel Ltd",
       "score": 0.49,
-      "rsi": 36.1,
+      "rsi": 36.0,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "BDL",
       "name": "Bharat Dynamics Ltd",
       "score": 0.46,
-      "rsi": 75.6,
+      "rsi": 75.5,
       "ma_signal": "MA ↑"
     },
     {
@@ -247,14 +254,14 @@
       "symbol": "INFY",
       "name": "Infosys Ltd",
       "score": 0.46,
-      "rsi": 27.9,
+      "rsi": 27.8,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd",
       "score": 0.44,
-      "rsi": 47.0,
+      "rsi": 46.9,
       "ma_signal": "MA ↓"
     },
     {
@@ -263,13 +270,6 @@
       "score": 0.43,
       "rsi": 68.0,
       "ma_signal": "MA ↑"
-    },
-    {
-      "symbol": "ITI",
-      "name": "ITI Ltd",
-      "score": 0.4,
-      "rsi": 47.5,
-      "ma_signal": "MA ↓"
     },
     {
       "symbol": "M&M",
@@ -289,7 +289,7 @@
       "symbol": "SILVERIETF",
       "name": "ICICI Prudential Silver ETF",
       "score": 0.37,
-      "rsi": 38.8,
+      "rsi": 38.9,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -303,14 +303,14 @@
       "symbol": "BEL",
       "name": "Bharat Electronics Ltd",
       "score": 0.36,
-      "rsi": 51.3,
+      "rsi": 51.2,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BRITANNIA",
       "name": "Britannia Industries Ltd",
       "score": 0.36,
-      "rsi": 50.6,
+      "rsi": 50.4,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -324,7 +324,7 @@
       "symbol": "EICHERMOT",
       "name": "Eicher Motors Ltd",
       "score": 0.32,
-      "rsi": 47.5,
+      "rsi": 47.4,
       "ma_signal": "MA ↓↓"
     },
     {
