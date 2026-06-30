@@ -1,11 +1,102 @@
 {
   "session_date": "2026-06-30",
-  "session_status": "Analysing · Buying at 10:00 AM",
+  "session_status": "Live",
   "last_updated": "--",
   "analysis_time": "10:22 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.62,
+      "signal": "Neutral",
+      "buy_price": 1495.5,
+      "current_price": 1495.5,
+      "qty": 50,
+      "invested": 74775.0,
+      "current_value": 74775.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power & Industrial Solutions Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.62,
+      "signal": "Neutral",
+      "buy_price": 959.3,
+      "current_price": 959.3,
+      "qty": 78,
+      "invested": 74825.4,
+      "current_value": 74825.4,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.58,
+      "signal": "Neutral",
+      "buy_price": 7031.0,
+      "current_price": 7031.0,
+      "qty": 10,
+      "invested": 70310.0,
+      "current_value": 70310.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "M&M",
+      "name": "Mahindra & Mahindra Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.58,
+      "signal": "Neutral",
+      "buy_price": 3105.1,
+      "current_price": 3105.1,
+      "qty": 24,
+      "invested": 74522.4,
+      "current_value": 74522.4,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ENRIN",
+      "name": "Siemens Energy India Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.55,
+      "signal": "Neutral",
+      "buy_price": 3669.3,
+      "current_price": 3669.3,
+      "qty": 20,
+      "invested": 73386.0,
+      "current_value": 73386.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.54,
+      "signal": "Neutral",
+      "buy_price": 3464.3,
+      "current_price": 3464.3,
+      "qty": 21,
+      "invested": 72750.3,
+      "current_value": 72750.3,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    }
+  ],
   "activity_log": [
     {
       "time": "10:21 AM",
@@ -16,6 +107,60 @@
     {
       "time": "10:22 AM",
       "action": "Analysis complete · Top 7: ADANIGREEN, CGPOWER, ABB, M&M, ENRIN, TVSMOTOR, VALIANTCO",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Buying top 7 stocks now",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Bought ADANIGREEN · 50 qty @ ₹1495.5 · confidence 0.62",
+      "amount": 74775.0,
+      "type": "buy"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Bought CGPOWER · 78 qty @ ₹959.3 · confidence 0.62",
+      "amount": 74825.4,
+      "type": "buy"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Bought ABB · 10 qty @ ₹7031.0 · confidence 0.58",
+      "amount": 70310.0,
+      "type": "buy"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Bought M&M · 24 qty @ ₹3105.1 · confidence 0.58",
+      "amount": 74522.4,
+      "type": "buy"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Bought ENRIN · 20 qty @ ₹3669.3 · confidence 0.55",
+      "amount": 73386.0,
+      "type": "buy"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Bought TVSMOTOR · 21 qty @ ₹3464.3 · confidence 0.54",
+      "amount": 72750.3,
+      "type": "buy"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "Skipped VALIANTCO — price unavailable",
+      "amount": 0,
+      "type": "warning"
+    },
+    {
+      "time": "10:24 AM",
+      "action": "All bought · 6 stocks · ₹440,569 deployed",
       "amount": 0,
       "type": "info"
     }
