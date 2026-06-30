@@ -1,379 +1,168 @@
 {
-  "session_date": "2026-06-29",
-  "session_status": "Waiting · Market opens at 09:30",
-  "last_updated": "06:17 PM",
-  "analysis_time": "12:22 PM",
+  "session_date": "2026-06-30",
+  "session_status": "Analysing · Buying at 10:00 AM",
+  "last_updated": "--",
+  "analysis_time": "10:22 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
-  "positions": [
-    {
-      "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.66,
-      "signal": "Bullish",
-      "buy_price": 1497.5,
-      "current_price": 1503.4,
-      "qty": 50,
-      "invested": 74875.0,
-      "current_value": 75170.0,
-      "pnl": 295.0,
-      "pnl_pct": 0.39,
-      "sold": true
-    },
-    {
-      "symbol": "CGPOWER",
-      "name": "CG Power & Industrial Solutions Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.59,
-      "signal": "Neutral",
-      "buy_price": 944.7,
-      "current_price": 962.9,
-      "qty": 79,
-      "invested": 74631.3,
-      "current_value": 76069.1,
-      "pnl": 1437.8,
-      "pnl_pct": 1.93,
-      "sold": true
-    },
-    {
-      "symbol": "ABB",
-      "name": "ABB India Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.59,
-      "signal": "Neutral",
-      "buy_price": 6999.0,
-      "current_price": 7100.0,
-      "qty": 10,
-      "invested": 69990.0,
-      "current_value": 71000.0,
-      "pnl": 1010.0,
-      "pnl_pct": 1.44,
-      "sold": true
-    },
-    {
-      "symbol": "ENRIN",
-      "name": "Siemens Energy India Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.58,
-      "signal": "Neutral",
-      "buy_price": 3559.8,
-      "current_price": 3584.5,
-      "qty": 21,
-      "invested": 74755.8,
-      "current_value": 75274.5,
-      "pnl": 518.7,
-      "pnl_pct": 0.69,
-      "sold": true
-    },
-    {
-      "symbol": "M&M",
-      "name": "Mahindra & Mahindra Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.36,
-      "signal": "Bearish",
-      "buy_price": 3110.7,
-      "current_price": 3096.1,
-      "qty": 24,
-      "invested": 74656.8,
-      "current_value": 74306.4,
-      "pnl": -350.4,
-      "pnl_pct": -0.47,
-      "sold": true
-    },
-    {
-      "symbol": "TVSMOTOR",
-      "name": "TVS Motor Company Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.36,
-      "signal": "Bearish",
-      "buy_price": 3469.7,
-      "current_price": 3453.6,
-      "qty": 21,
-      "invested": 72863.7,
-      "current_value": 72525.6,
-      "pnl": -338.1,
-      "pnl_pct": -0.46,
-      "sold": true
-    }
-  ],
+  "positions": [],
   "activity_log": [
     {
-      "time": "12:21 PM",
+      "time": "10:21 AM",
       "action": "Analysis started · calculating RSI, MA, momentum for all stocks",
       "amount": 0,
       "type": "info"
     },
     {
-      "time": "12:22 PM",
-      "action": "Analysis complete · Top 7: ADANIGREEN, CGPOWER, ABB, ENRIN, M&M, TVSMOTOR, VALIANTCO",
+      "time": "10:22 AM",
+      "action": "Analysis complete · Top 7: ADANIGREEN, CGPOWER, ABB, M&M, ENRIN, TVSMOTOR, VALIANTCO",
       "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Buying top 7 stocks now",
-      "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Bought ADANIGREEN · 50 qty @ ₹1497.5 · confidence 0.66",
-      "amount": 74875.0,
-      "type": "buy"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Bought CGPOWER · 79 qty @ ₹944.7 · confidence 0.59",
-      "amount": 74631.3,
-      "type": "buy"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Bought ABB · 10 qty @ ₹6999.0 · confidence 0.58",
-      "amount": 69990.0,
-      "type": "buy"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Bought ENRIN · 21 qty @ ₹3559.8 · confidence 0.58",
-      "amount": 74755.8,
-      "type": "buy"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Bought M&M · 24 qty @ ₹3110.7 · confidence 0.58",
-      "amount": 74656.8,
-      "type": "buy"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Bought TVSMOTOR · 21 qty @ ₹3469.7 · confidence 0.54",
-      "amount": 72863.7,
-      "type": "buy"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "Skipped VALIANTCO — price unavailable",
-      "amount": 0,
-      "type": "warning"
-    },
-    {
-      "time": "12:24 PM",
-      "action": "All bought · 6 stocks · ₹441,773 deployed",
-      "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Sold ADANIGREEN · 50 qty @ ₹1503.4 · +0.39%",
-      "amount": 75170.0,
-      "type": "sell"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Sold CGPOWER · 79 qty @ ₹962.9 · +1.93%",
-      "amount": 76069.1,
-      "type": "sell"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Sold ABB · 10 qty @ ₹7100.0 · +1.44%",
-      "amount": 71000.0,
-      "type": "sell"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Sold ENRIN · 21 qty @ ₹3584.5 · +0.69%",
-      "amount": 75274.5,
-      "type": "sell"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Sold M&M · 24 qty @ ₹3096.1 · -0.47%",
-      "amount": 74306.4,
-      "type": "sell"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Sold TVSMOTOR · 21 qty @ ₹3453.6 · -0.46%",
-      "amount": 72525.6,
-      "type": "sell"
-    },
-    {
-      "time": "03:21 PM",
-      "action": "Day complete · Total P&L: ₹+2,573 (+0.58%)",
-      "amount": 2573.0,
       "type": "info"
     }
   ],
   "confidence_scores": [
     {
       "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Ltd",
-      "score": 0.66,
-      "rsi": 51.8,
-      "ma_signal": "MA ↑↑"
-    },
-    {
-      "symbol": "ABB",
-      "name": "ABB India Ltd",
-      "score": 0.59,
-      "rsi": 55.9,
+      "score": 0.62,
+      "rsi": 52.2,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
-      "name": "CG Power & Industrial Solutions Ltd",
-      "score": 0.59,
-      "rsi": 65.6,
+      "score": 0.62,
+      "rsi": 63.7,
       "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "ABB",
+      "score": 0.58,
+      "rsi": 53.7,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "M&M",
+      "score": 0.58,
+      "rsi": 64.3,
+      "ma_signal": "MA ↑"
     },
     {
       "symbol": "ENRIN",
-      "name": "Siemens Energy India Ltd",
-      "score": 0.58,
-      "rsi": 54.1,
+      "score": 0.55,
+      "rsi": 55.9,
       "ma_signal": "MA ↑↑"
     },
     {
+      "symbol": "TVSMOTOR",
+      "score": 0.54,
+      "rsi": 58.4,
+      "ma_signal": "MA ↑"
+    },
+    {
       "symbol": "VALIANTCO",
-      "name": "Valiant Communications Ltd",
       "score": 0.5,
       "rsi": 50,
       "ma_signal": "Insufficient data"
     },
     {
       "symbol": "TATAMOTORS",
-      "name": "Tata Motors Passenger Vehicles Ltd",
       "score": 0.5,
       "rsi": 50,
       "ma_signal": "Insufficient data"
     },
     {
-      "symbol": "EICHERMOT",
-      "name": "Eicher Motors Ltd",
-      "score": 0.47,
-      "rsi": 66.2,
-      "ma_signal": "MA ↑"
+      "symbol": "TATASTEEL",
+      "score": 0.46,
+      "rsi": 35.4,
+      "ma_signal": "MA ↓"
     },
     {
-      "symbol": "ASHOKA",
-      "name": "Ashoka Buildcon Ltd",
-      "score": 0.47,
-      "rsi": 67.4,
-      "ma_signal": "MA ↑"
+      "symbol": "TATASTEEL",
+      "score": 0.46,
+      "rsi": 35.4,
+      "ma_signal": "MA ↓"
     },
     {
       "symbol": "BDL",
-      "name": "Bharat Dynamics Ltd",
-      "score": 0.47,
-      "rsi": 69.3,
+      "score": 0.46,
+      "rsi": 75.3,
       "ma_signal": "MA ↑"
     },
     {
-      "symbol": "TATASTEEL",
-      "name": "Tata Motors Ltd",
-      "score": 0.46,
-      "rsi": 35.4,
-      "ma_signal": "MA ↓"
-    },
-    {
-      "symbol": "TATASTEEL",
-      "name": "Tata Steel Ltd",
-      "score": 0.46,
-      "rsi": 35.4,
-      "ma_signal": "MA ↓"
-    },
-    {
       "symbol": "GOLDBEES",
-      "name": "Nippon India ETF Gold Bees",
       "score": 0.46,
-      "rsi": 31.5,
+      "rsi": 35.9,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "INFY",
-      "name": "Infosys Ltd",
       "score": 0.46,
-      "rsi": 28.7,
+      "rsi": 27.9,
       "ma_signal": "MA ↓↓"
     },
     {
-      "symbol": "HAL",
-      "name": "Hindustan Aeronautics Ltd",
-      "score": 0.41,
-      "rsi": 57.4,
+      "symbol": "BSE",
+      "score": 0.44,
+      "rsi": 47.0,
       "ma_signal": "MA ↓"
     },
     {
-      "symbol": "BSE",
-      "name": "BSE Ltd",
-      "score": 0.4,
-      "rsi": 46.6,
-      "ma_signal": "MA ↓"
+      "symbol": "ASHOKA",
+      "score": 0.43,
+      "rsi": 67.8,
+      "ma_signal": "MA ↑"
     },
     {
       "symbol": "ITI",
-      "name": "ITI Ltd",
       "score": 0.4,
-      "rsi": 49.1,
+      "rsi": 47.0,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "SILVERADD",
-      "name": "DSP Silver ETF",
       "score": 0.37,
-      "rsi": 36.4,
+      "rsi": 33.4,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "SILVERIETF",
-      "name": "ICICI Prudential Silver ETF",
       "score": 0.37,
-      "rsi": 31.9,
+      "rsi": 39.3,
       "ma_signal": "MA ↓↓"
     },
     {
-      "symbol": "TVSMOTOR",
-      "name": "TVS Motor Company Ltd",
-      "score": 0.36,
-      "rsi": 59.9,
-      "ma_signal": "MA ↓↓"
+      "symbol": "HAL",
+      "score": 0.37,
+      "rsi": 56.9,
+      "ma_signal": "MA ↓"
     },
     {
-      "symbol": "M&M",
-      "name": "Mahindra & Mahindra Ltd",
+      "symbol": "BEL",
       "score": 0.36,
-      "rsi": 61.1,
+      "rsi": 51.3,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BRITANNIA",
-      "name": "Britannia Industries Ltd",
       "score": 0.36,
-      "rsi": 51.1,
+      "rsi": 50.0,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "RVNL",
-      "name": "Rail Vikas Nigam Ltd",
-      "score": 0.33,
-      "rsi": 57.7,
+      "score": 0.36,
+      "rsi": 60.2,
       "ma_signal": "MA ↓↓"
     },
     {
-      "symbol": "BEL",
-      "name": "Bharat Electronics Ltd",
+      "symbol": "EICHERMOT",
       "score": 0.32,
-      "rsi": 49.2,
+      "rsi": 46.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "KAYNES",
-      "name": "Kaynes Technology India Ltd",
-      "score": 0.29,
-      "rsi": 57.2,
+      "score": 0.32,
+      "rsi": 53.3,
       "ma_signal": "MA ↓↓"
     }
   ]
