@@ -1,7 +1,7 @@
 {
   "session_date": "2026-07-01",
   "session_status": "Live",
-  "last_updated": "11:37 AM",
+  "last_updated": "11:39 AM",
   "analysis_time": "10:47 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.68,
       "signal": "Bullish",
       "buy_price": 965.95,
-      "current_price": 965.05,
+      "current_price": 964.7,
       "qty": 77,
       "invested": 74378.15,
-      "current_value": 74308.85,
-      "pnl": -69.3,
-      "pnl_pct": -0.09,
+      "current_value": 74281.9,
+      "pnl": -96.25,
+      "pnl_pct": -0.13,
       "sold": false
     },
     {
@@ -28,12 +28,12 @@
       "confidence_score": 0.62,
       "signal": "Neutral",
       "buy_price": 1532.2,
-      "current_price": 1531.4,
+      "current_price": 1531.6,
       "qty": 48,
       "invested": 73545.6,
-      "current_value": 73507.2,
-      "pnl": -38.4,
-      "pnl_pct": -0.05,
+      "current_value": 73516.8,
+      "pnl": -28.8,
+      "pnl_pct": -0.04,
       "sold": false
     },
     {
@@ -43,27 +43,27 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 7044.0,
-      "current_price": 7024.5,
+      "current_price": 7026.0,
       "qty": 10,
       "invested": 70440.0,
-      "current_value": 70245.0,
-      "pnl": -195.0,
-      "pnl_pct": -0.28,
+      "current_value": 70260.0,
+      "pnl": -180.0,
+      "pnl_pct": -0.26,
       "sold": false
     },
     {
       "symbol": "ITI",
       "name": "ITI Ltd",
       "allocation_pct": 15,
-      "confidence_score": 0.59,
+      "confidence_score": 0.55,
       "signal": "Neutral",
       "buy_price": 306.1,
-      "current_price": 304.4,
+      "current_price": 304.1,
       "qty": 245,
       "invested": 74994.5,
-      "current_value": 74578.0,
-      "pnl": -416.5,
-      "pnl_pct": -0.56,
+      "current_value": 74504.5,
+      "pnl": -490.0,
+      "pnl_pct": -0.65,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 4425.0,
-      "current_price": 4441.9,
+      "current_price": 4439.8,
       "qty": 16,
       "invested": 70800.0,
-      "current_value": 71070.4,
-      "pnl": 270.4,
-      "pnl_pct": 0.38,
+      "current_value": 71036.8,
+      "pnl": 236.8,
+      "pnl_pct": 0.33,
       "sold": false
     },
     {
@@ -88,12 +88,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3494.8,
-      "current_price": 3500.0,
+      "current_price": 3496.9,
       "qty": 21,
       "invested": 73390.8,
-      "current_value": 73500.0,
-      "pnl": 109.2,
-      "pnl_pct": 0.15,
+      "current_value": 73434.9,
+      "pnl": 44.1,
+      "pnl_pct": 0.06,
       "sold": false
     },
     {
@@ -103,12 +103,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3144.0,
-      "current_price": 3141.0,
+      "current_price": 3139.6,
       "qty": 23,
       "invested": 72312.0,
-      "current_value": 72243.0,
-      "pnl": -69.0,
-      "pnl_pct": -0.1,
+      "current_value": 72210.8,
+      "pnl": -101.2,
+      "pnl_pct": -0.14,
       "sold": false
     }
   ],
@@ -192,21 +192,14 @@
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Ltd",
       "score": 0.62,
-      "rsi": 64.3,
+      "rsi": 64.2,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ABB",
       "name": "ABB India Ltd",
       "score": 0.59,
-      "rsi": 59.5,
-      "ma_signal": "MA ↑↑"
-    },
-    {
-      "symbol": "ITI",
-      "name": "ITI Ltd",
-      "score": 0.59,
-      "rsi": 66.1,
+      "rsi": 59.6,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -220,28 +213,35 @@
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Company Ltd",
       "score": 0.58,
-      "rsi": 62.5,
+      "rsi": 62.3,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "M&M",
       "name": "Mahindra & Mahindra Ltd",
       "score": 0.58,
-      "rsi": 61.9,
+      "rsi": 62.1,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Energy India Ltd",
       "score": 0.55,
-      "rsi": 65.0,
+      "rsi": 65.4,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "ITI",
+      "name": "ITI Ltd",
+      "score": 0.55,
+      "rsi": 65.9,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd",
       "score": 0.52,
-      "rsi": 53.5,
+      "rsi": 53.8,
       "ma_signal": "MA ↓"
     },
     {
@@ -276,7 +276,7 @@
       "symbol": "BDL",
       "name": "Bharat Dynamics Ltd",
       "score": 0.46,
-      "rsi": 80.2,
+      "rsi": 80.1,
       "ma_signal": "MA ↑"
     },
     {
@@ -311,7 +311,7 @@
       "symbol": "GOLDBEES",
       "name": "Nippon India ETF Gold Bees",
       "score": 0.41,
-      "rsi": 38.5,
+      "rsi": 38.4,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -339,7 +339,7 @@
       "symbol": "KAYNES",
       "name": "Kaynes Technology India Ltd",
       "score": 0.33,
-      "rsi": 58.0,
+      "rsi": 58.2,
       "ma_signal": "MA ↓↓"
     },
     {
