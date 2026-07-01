@@ -1,7 +1,7 @@
 {
   "session_date": "2026-07-01",
   "session_status": "Live",
-  "last_updated": "12:03 PM",
+  "last_updated": "12:05 PM",
   "analysis_time": "10:47 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.68,
       "signal": "Bullish",
       "buy_price": 965.95,
-      "current_price": 961.75,
+      "current_price": 961.85,
       "qty": 77,
       "invested": 74378.15,
-      "current_value": 74054.75,
-      "pnl": -323.4,
-      "pnl_pct": -0.43,
+      "current_value": 74062.45,
+      "pnl": -315.7,
+      "pnl_pct": -0.42,
       "sold": false
     },
     {
@@ -28,12 +28,12 @@
       "confidence_score": 0.62,
       "signal": "Neutral",
       "buy_price": 1532.2,
-      "current_price": 1533.2,
+      "current_price": 1536.0,
       "qty": 48,
       "invested": 73545.6,
-      "current_value": 73593.6,
-      "pnl": 48.0,
-      "pnl_pct": 0.07,
+      "current_value": 73728.0,
+      "pnl": 182.4,
+      "pnl_pct": 0.25,
       "sold": false
     },
     {
@@ -43,12 +43,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 7044.0,
-      "current_price": 7011.0,
+      "current_price": 7008.0,
       "qty": 10,
       "invested": 70440.0,
-      "current_value": 70110.0,
-      "pnl": -330.0,
-      "pnl_pct": -0.47,
+      "current_value": 70080.0,
+      "pnl": -360.0,
+      "pnl_pct": -0.51,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.55,
       "signal": "Neutral",
       "buy_price": 306.1,
-      "current_price": 303.5,
+      "current_price": 303.05,
       "qty": 245,
       "invested": 74994.5,
-      "current_value": 74357.5,
-      "pnl": -637.0,
-      "pnl_pct": -0.85,
+      "current_value": 74247.25,
+      "pnl": -747.25,
+      "pnl_pct": -1.0,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 4425.0,
-      "current_price": 4435.1,
+      "current_price": 4435.8,
       "qty": 16,
       "invested": 70800.0,
-      "current_value": 70961.6,
-      "pnl": 161.6,
-      "pnl_pct": 0.23,
+      "current_value": 70972.8,
+      "pnl": 172.8,
+      "pnl_pct": 0.24,
       "sold": false
     },
     {
@@ -88,11 +88,11 @@
       "confidence_score": 0.54,
       "signal": "Neutral",
       "buy_price": 3494.8,
-      "current_price": 3487.4,
+      "current_price": 3487.3,
       "qty": 21,
       "invested": 73390.8,
-      "current_value": 73235.4,
-      "pnl": -155.4,
+      "current_value": 73233.3,
+      "pnl": -157.5,
       "pnl_pct": -0.21,
       "sold": false
     },
@@ -103,12 +103,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3144.0,
-      "current_price": 3136.1,
+      "current_price": 3138.2,
       "qty": 23,
       "invested": 72312.0,
-      "current_value": 72130.3,
-      "pnl": -181.7,
-      "pnl_pct": -0.25,
+      "current_value": 72178.6,
+      "pnl": -133.4,
+      "pnl_pct": -0.18,
       "sold": false
     }
   ],
@@ -192,14 +192,14 @@
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Ltd",
       "score": 0.62,
-      "rsi": 64.3,
+      "rsi": 64.8,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ABB",
       "name": "ABB India Ltd",
       "score": 0.59,
-      "rsi": 58.8,
+      "rsi": 58.7,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -213,7 +213,7 @@
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd",
       "score": 0.59,
-      "rsi": 63.2,
+      "rsi": 63.3,
       "ma_signal": "MA ↑↑"
     },
     {
@@ -227,14 +227,14 @@
       "symbol": "ITI",
       "name": "ITI Ltd",
       "score": 0.55,
-      "rsi": 65.5,
+      "rsi": 65.2,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Company Ltd",
       "score": 0.54,
-      "rsi": 61.8,
+      "rsi": 61.7,
       "ma_signal": "MA ↑"
     },
     {
@@ -290,7 +290,7 @@
       "symbol": "ASHOKA",
       "name": "Ashoka Buildcon Ltd",
       "score": 0.42,
-      "rsi": 76.0,
+      "rsi": 75.8,
       "ma_signal": "MA ↑"
     },
     {
@@ -318,35 +318,35 @@
       "symbol": "BEL",
       "name": "Bharat Electronics Ltd",
       "score": 0.36,
-      "rsi": 59.9,
+      "rsi": 59.8,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BRITANNIA",
       "name": "Britannia Industries Ltd",
       "score": 0.36,
-      "rsi": 50.2,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "KAYNES",
-      "name": "Kaynes Technology India Ltd",
-      "score": 0.36,
-      "rsi": 58.9,
+      "rsi": 50.4,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "RVNL",
       "name": "Rail Vikas Nigam Ltd",
       "score": 0.33,
-      "rsi": 68.5,
+      "rsi": 68.4,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "KAYNES",
+      "name": "Kaynes Technology India Ltd",
+      "score": 0.33,
+      "rsi": 58.4,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "EICHERMOT",
       "name": "Eicher Motors Ltd",
       "score": 0.32,
-      "rsi": 48.0,
+      "rsi": 48.1,
       "ma_signal": "MA ↓↓"
     }
   ]
