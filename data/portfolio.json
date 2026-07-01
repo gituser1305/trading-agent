@@ -1,11 +1,117 @@
 {
   "session_date": "2026-07-01",
-  "session_status": "Analysing · Buying at 10:00 AM",
+  "session_status": "Live",
   "last_updated": "--",
   "analysis_time": "10:47 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power & Industrial Solutions Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.68,
+      "signal": "Bullish",
+      "buy_price": 965.95,
+      "current_price": 965.95,
+      "qty": 77,
+      "invested": 74378.15,
+      "current_value": 74378.15,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.62,
+      "signal": "Neutral",
+      "buy_price": 1532.2,
+      "current_price": 1532.2,
+      "qty": 48,
+      "invested": 73545.6,
+      "current_value": 73545.6,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.59,
+      "signal": "Neutral",
+      "buy_price": 7044.0,
+      "current_price": 7044.0,
+      "qty": 10,
+      "invested": 70440.0,
+      "current_value": 70440.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ITI",
+      "name": "ITI Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.59,
+      "signal": "Neutral",
+      "buy_price": 306.1,
+      "current_price": 306.1,
+      "qty": 245,
+      "invested": 74994.5,
+      "current_value": 74994.5,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "HAL",
+      "name": "Hindustan Aeronautics Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.59,
+      "signal": "Neutral",
+      "buy_price": 4425.0,
+      "current_price": 4425.0,
+      "qty": 16,
+      "invested": 70800.0,
+      "current_value": 70800.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.58,
+      "signal": "Neutral",
+      "buy_price": 3494.8,
+      "current_price": 3494.8,
+      "qty": 21,
+      "invested": 73390.8,
+      "current_value": 73390.8,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "M&M",
+      "name": "Mahindra & Mahindra Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.58,
+      "signal": "Neutral",
+      "buy_price": 3144.0,
+      "current_price": 3144.0,
+      "qty": 23,
+      "invested": 72312.0,
+      "current_value": 72312.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    }
+  ],
   "activity_log": [
     {
       "time": "10:46 AM",
@@ -16,6 +122,60 @@
     {
       "time": "10:47 AM",
       "action": "Analysis complete · Top 7: CGPOWER, ADANIGREEN, ABB, ITI, HAL, TVSMOTOR, M&M",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Buying top 7 stocks now",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought CGPOWER · 77 qty @ ₹965.95 · confidence 0.68",
+      "amount": 74378.15,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought ADANIGREEN · 48 qty @ ₹1532.2 · confidence 0.62",
+      "amount": 73545.6,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought ABB · 10 qty @ ₹7044.0 · confidence 0.59",
+      "amount": 70440.0,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought ITI · 245 qty @ ₹306.1 · confidence 0.59",
+      "amount": 74994.5,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought HAL · 16 qty @ ₹4425.0 · confidence 0.59",
+      "amount": 70800.0,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought TVSMOTOR · 21 qty @ ₹3494.8 · confidence 0.58",
+      "amount": 73390.8,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "Bought M&M · 23 qty @ ₹3144.0 · confidence 0.58",
+      "amount": 72312.0,
+      "type": "buy"
+    },
+    {
+      "time": "10:49 AM",
+      "action": "All bought · 7 stocks · ₹509,861 deployed",
       "amount": 0,
       "type": "info"
     }
