@@ -1,7 +1,7 @@
 {
   "session_date": "2026-07-01",
   "session_status": "Live",
-  "last_updated": "03:00 PM",
+  "last_updated": "03:02 PM",
   "analysis_time": "10:47 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.68,
       "signal": "Bullish",
       "buy_price": 965.95,
-      "current_price": 975.7,
+      "current_price": 976.9,
       "qty": 77,
       "invested": 74378.15,
-      "current_value": 75128.9,
-      "pnl": 750.75,
-      "pnl_pct": 1.01,
+      "current_value": 75221.3,
+      "pnl": 843.15,
+      "pnl_pct": 1.13,
       "sold": false
     },
     {
@@ -40,15 +40,15 @@
       "symbol": "ABB",
       "name": "ABB India Ltd",
       "allocation_pct": 15,
-      "confidence_score": 0.41,
+      "confidence_score": 0.37,
       "signal": "Bearish",
       "buy_price": 7044.0,
-      "current_price": 6950.5,
+      "current_price": 6942.0,
       "qty": 10,
       "invested": 70440.0,
-      "current_value": 69505.0,
-      "pnl": -935.0,
-      "pnl_pct": -1.33,
+      "current_value": 69420.0,
+      "pnl": -1020.0,
+      "pnl_pct": -1.45,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 306.1,
-      "current_price": 302.3,
+      "current_price": 302.5,
       "qty": 245,
       "invested": 74994.5,
-      "current_value": 74063.5,
-      "pnl": -931.0,
-      "pnl_pct": -1.24,
+      "current_value": 74112.5,
+      "pnl": -882.0,
+      "pnl_pct": -1.18,
       "sold": false
     },
     {
@@ -73,27 +73,27 @@
       "confidence_score": 0.59,
       "signal": "Neutral",
       "buy_price": 4425.0,
-      "current_price": 4443.2,
+      "current_price": 4435.9,
       "qty": 16,
       "invested": 70800.0,
-      "current_value": 71091.2,
-      "pnl": 291.2,
-      "pnl_pct": 0.41,
+      "current_value": 70974.4,
+      "pnl": 174.4,
+      "pnl_pct": 0.25,
       "sold": false
     },
     {
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Company Ltd",
       "allocation_pct": 15,
-      "confidence_score": 0.58,
+      "confidence_score": 0.54,
       "signal": "Neutral",
       "buy_price": 3494.8,
-      "current_price": 3493.4,
+      "current_price": 3490.7,
       "qty": 21,
       "invested": 73390.8,
-      "current_value": 73361.4,
-      "pnl": -29.4,
-      "pnl_pct": -0.04,
+      "current_value": 73304.7,
+      "pnl": -86.1,
+      "pnl_pct": -0.12,
       "sold": false
     },
     {
@@ -103,12 +103,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3144.0,
-      "current_price": 3137.3,
+      "current_price": 3128.0,
       "qty": 23,
       "invested": 72312.0,
-      "current_value": 72157.9,
-      "pnl": -154.1,
-      "pnl_pct": -0.21,
+      "current_value": 71944.0,
+      "pnl": -368.0,
+      "pnl_pct": -0.51,
       "sold": false
     }
   ],
@@ -185,56 +185,56 @@
       "symbol": "CGPOWER",
       "name": "CG Power & Industrial Solutions Ltd",
       "score": 0.68,
-      "rsi": 69.6,
+      "rsi": 69.8,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Ltd",
       "score": 0.62,
-      "rsi": 64.4,
+      "rsi": 64.3,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ITI",
       "name": "ITI Ltd",
       "score": 0.59,
-      "rsi": 64.6,
+      "rsi": 64.4,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd",
       "score": 0.59,
-      "rsi": 63.6,
+      "rsi": 63.2,
       "ma_signal": "MA ↑↑"
-    },
-    {
-      "symbol": "TVSMOTOR",
-      "name": "TVS Motor Company Ltd",
-      "score": 0.58,
-      "rsi": 62.1,
-      "ma_signal": "MA ↑"
     },
     {
       "symbol": "M&M",
       "name": "Mahindra & Mahindra Ltd",
       "score": 0.58,
-      "rsi": 61.9,
+      "rsi": 61.3,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Energy India Ltd",
       "score": 0.55,
-      "rsi": 60.8,
+      "rsi": 61.3,
       "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Ltd",
+      "score": 0.54,
+      "rsi": 62.0,
+      "ma_signal": "MA ↑"
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd",
       "score": 0.52,
-      "rsi": 53.7,
+      "rsi": 53.9,
       "ma_signal": "MA ↓"
     },
     {
@@ -276,29 +276,22 @@
       "symbol": "SILVERIETF",
       "name": "ICICI Prudential Silver ETF",
       "score": 0.45,
-      "rsi": 41.9,
+      "rsi": 42.0,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "INFY",
       "name": "Infosys Ltd",
       "score": 0.43,
-      "rsi": 28.7,
+      "rsi": 28.4,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "ASHOKA",
       "name": "Ashoka Buildcon Ltd",
       "score": 0.42,
-      "rsi": 75.7,
+      "rsi": 75.6,
       "ma_signal": "MA ↑"
-    },
-    {
-      "symbol": "ABB",
-      "name": "ABB India Ltd",
-      "score": 0.41,
-      "rsi": 56.0,
-      "ma_signal": "MA ↓"
     },
     {
       "symbol": "SILVERADD",
@@ -311,14 +304,21 @@
       "symbol": "GOLDBEES",
       "name": "Nippon India ETF Gold Bees",
       "score": 0.41,
-      "rsi": 39.6,
+      "rsi": 39.8,
       "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Ltd",
+      "score": 0.37,
+      "rsi": 55.6,
+      "ma_signal": "MA ↓"
     },
     {
       "symbol": "BEL",
       "name": "Bharat Electronics Ltd",
       "score": 0.36,
-      "rsi": 60.3,
+      "rsi": 59.6,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -332,21 +332,21 @@
       "symbol": "RVNL",
       "name": "Rail Vikas Nigam Ltd",
       "score": 0.33,
-      "rsi": 67.4,
+      "rsi": 67.2,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "KAYNES",
       "name": "Kaynes Technology India Ltd",
       "score": 0.33,
-      "rsi": 57.2,
+      "rsi": 57.4,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "EICHERMOT",
       "name": "Eicher Motors Ltd",
       "score": 0.32,
-      "rsi": 48.5,
+      "rsi": 48.2,
       "ma_signal": "MA ↓↓"
     }
   ]
