@@ -1,11 +1,117 @@
 {
   "session_date": "2026-07-02",
-  "session_status": "Analysing · Buying at 10:00 AM",
+  "session_status": "Live",
   "last_updated": "--",
   "analysis_time": "12:35 PM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.66,
+      "signal": "Bullish",
+      "buy_price": 1544.0,
+      "current_price": 1544.0,
+      "qty": 48,
+      "invested": 74112.0,
+      "current_value": 74112.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power & Industrial Solutions Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.66,
+      "signal": "Bullish",
+      "buy_price": 964.5,
+      "current_price": 964.5,
+      "qty": 77,
+      "invested": 74266.5,
+      "current_value": 74266.5,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ITI",
+      "name": "ITI Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.66,
+      "signal": "Bullish",
+      "buy_price": 300.7,
+      "current_price": 300.7,
+      "qty": 249,
+      "invested": 74874.3,
+      "current_value": 74874.3,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "HAL",
+      "name": "Hindustan Aeronautics Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.62,
+      "signal": "Neutral",
+      "buy_price": 4430.2,
+      "current_price": 4430.2,
+      "qty": 16,
+      "invested": 70883.2,
+      "current_value": 70883.2,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "ENRIN",
+      "name": "Siemens Energy India Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.58,
+      "signal": "Neutral",
+      "buy_price": 3525.0,
+      "current_price": 3525.0,
+      "qty": 21,
+      "invested": 74025.0,
+      "current_value": 74025.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "TATASTEEL",
+      "name": "Tata Motors Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.55,
+      "signal": "Neutral",
+      "buy_price": 186.14,
+      "current_price": 186.14,
+      "qty": 402,
+      "invested": 74828.28,
+      "current_value": 74828.28,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    },
+    {
+      "symbol": "TATASTEEL",
+      "name": "Tata Steel Ltd",
+      "allocation_pct": 15,
+      "confidence_score": 0.55,
+      "signal": "Neutral",
+      "buy_price": 186.14,
+      "current_price": 186.14,
+      "qty": 402,
+      "invested": 74828.28,
+      "current_value": 74828.28,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "sold": false
+    }
+  ],
   "activity_log": [
     {
       "time": "12:35 PM",
@@ -16,6 +122,60 @@
     {
       "time": "12:35 PM",
       "action": "Analysis complete · Top 7: ADANIGREEN, CGPOWER, ITI, HAL, ENRIN, TATASTEEL, TATASTEEL",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Buying top 7 stocks now",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought ADANIGREEN · 48 qty @ ₹1544.0 · confidence 0.66",
+      "amount": 74112.0,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought CGPOWER · 77 qty @ ₹964.5 · confidence 0.66",
+      "amount": 74266.5,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought ITI · 249 qty @ ₹300.7 · confidence 0.66",
+      "amount": 74874.3,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought HAL · 16 qty @ ₹4430.2 · confidence 0.62",
+      "amount": 70883.2,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought ENRIN · 21 qty @ ₹3525.0 · confidence 0.58",
+      "amount": 74025.0,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought TATASTEEL · 402 qty @ ₹186.14 · confidence 0.55",
+      "amount": 74828.28,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "Bought TATASTEEL · 402 qty @ ₹186.14 · confidence 0.55",
+      "amount": 74828.28,
+      "type": "buy"
+    },
+    {
+      "time": "12:37 PM",
+      "action": "All bought · 7 stocks · ₹517,818 deployed",
       "amount": 0,
       "type": "info"
     }
