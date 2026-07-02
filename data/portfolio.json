@@ -1,181 +1,21 @@
 {
   "session_date": "2026-07-02",
-  "session_status": "Live",
-  "last_updated": "12:13 PM",
-  "analysis_time": "09:32 AM",
+  "session_status": "Analysing · Buying at 10:00 AM",
+  "last_updated": "--",
+  "analysis_time": "12:35 PM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
-  "positions": [
-    {
-      "symbol": "CGPOWER",
-      "name": "CG Power & Industrial Solutions Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.66,
-      "signal": "Bullish",
-      "buy_price": 958.75,
-      "current_price": 965.2,
-      "qty": 78,
-      "invested": 74782.5,
-      "current_value": 75285.6,
-      "pnl": 503.1,
-      "pnl_pct": 0.67,
-      "sold": false
-    },
-    {
-      "symbol": "ITI",
-      "name": "ITI Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.66,
-      "signal": "Bullish",
-      "buy_price": 301.25,
-      "current_price": 300.65,
-      "qty": 248,
-      "invested": 74710.0,
-      "current_value": 74561.2,
-      "pnl": -148.8,
-      "pnl_pct": -0.2,
-      "sold": false
-    },
-    {
-      "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.66,
-      "signal": "Bullish",
-      "buy_price": 1522.3,
-      "current_price": 1544.9,
-      "qty": 49,
-      "invested": 74592.7,
-      "current_value": 75700.1,
-      "pnl": 1107.4,
-      "pnl_pct": 1.48,
-      "sold": false
-    },
-    {
-      "symbol": "HAL",
-      "name": "Hindustan Aeronautics Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.62,
-      "signal": "Neutral",
-      "buy_price": 4436.5,
-      "current_price": 4432.6,
-      "qty": 16,
-      "invested": 70984.0,
-      "current_value": 70921.6,
-      "pnl": -62.4,
-      "pnl_pct": -0.09,
-      "sold": false
-    },
-    {
-      "symbol": "ENRIN",
-      "name": "Siemens Energy India Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.58,
-      "signal": "Neutral",
-      "buy_price": 3541.2,
-      "current_price": 3531.6,
-      "qty": 21,
-      "invested": 74365.2,
-      "current_value": 74163.6,
-      "pnl": -201.6,
-      "pnl_pct": -0.27,
-      "sold": false
-    },
-    {
-      "symbol": "BSE",
-      "name": "BSE Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.57,
-      "signal": "Neutral",
-      "buy_price": 3940.0,
-      "current_price": 3933.2,
-      "qty": 19,
-      "invested": 74860.0,
-      "current_value": 74730.8,
-      "pnl": -129.2,
-      "pnl_pct": -0.17,
-      "sold": false
-    },
-    {
-      "symbol": "TATASTEEL",
-      "name": "Tata Motors Ltd",
-      "allocation_pct": 15,
-      "confidence_score": 0.55,
-      "signal": "Neutral",
-      "buy_price": 186.8,
-      "current_price": 185.81,
-      "qty": 401,
-      "invested": 74906.8,
-      "current_value": 74509.81,
-      "pnl": -396.99,
-      "pnl_pct": -0.53,
-      "sold": false
-    }
-  ],
+  "positions": [],
   "activity_log": [
     {
-      "time": "09:31 AM",
+      "time": "12:35 PM",
       "action": "Analysis started · calculating RSI, MA, momentum for all stocks",
       "amount": 0,
       "type": "info"
     },
     {
-      "time": "09:32 AM",
-      "action": "Analysis complete · Top 7: CGPOWER, ITI, ADANIGREEN, HAL, ENRIN, BSE, TATASTEEL",
-      "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Buying top 7 stocks now",
-      "amount": 0,
-      "type": "info"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought CGPOWER · 78 qty @ ₹958.75 · confidence 0.66",
-      "amount": 74782.5,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought ITI · 248 qty @ ₹301.25 · confidence 0.66",
-      "amount": 74710.0,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought ADANIGREEN · 49 qty @ ₹1522.3 · confidence 0.62",
-      "amount": 74592.7,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought HAL · 16 qty @ ₹4436.5 · confidence 0.62",
-      "amount": 70984.0,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought ENRIN · 21 qty @ ₹3541.2 · confidence 0.58",
-      "amount": 74365.2,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought BSE · 19 qty @ ₹3940.0 · confidence 0.57",
-      "amount": 74860.0,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "Bought TATASTEEL · 401 qty @ ₹186.8 · confidence 0.55",
-      "amount": 74906.8,
-      "type": "buy"
-    },
-    {
-      "time": "10:00 AM",
-      "action": "All bought · 7 stocks · ₹519,201 deployed",
+      "time": "12:35 PM",
+      "action": "Analysis complete · Top 7: ADANIGREEN, CGPOWER, ITI, HAL, ENRIN, TATASTEEL, TATASTEEL",
       "amount": 0,
       "type": "info"
     }
@@ -183,170 +23,146 @@
   "confidence_scores": [
     {
       "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Ltd",
       "score": 0.66,
-      "rsi": 61.7,
+      "rsi": 61.6,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "CGPOWER",
-      "name": "CG Power & Industrial Solutions Ltd",
       "score": 0.66,
-      "rsi": 63.5,
+      "rsi": 63.0,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ITI",
-      "name": "ITI Ltd",
       "score": 0.66,
-      "rsi": 51.6,
+      "rsi": 52.0,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "HAL",
-      "name": "Hindustan Aeronautics Ltd",
       "score": 0.62,
-      "rsi": 66.9,
+      "rsi": 66.7,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
-      "name": "Siemens Energy India Ltd",
       "score": 0.58,
-      "rsi": 45.8,
+      "rsi": 45.4,
       "ma_signal": "MA ↑↑"
     },
     {
-      "symbol": "BSE",
-      "name": "BSE Ltd",
-      "score": 0.57,
-      "rsi": 40.8,
+      "symbol": "TATASTEEL",
+      "score": 0.55,
+      "rsi": 26.3,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "TATASTEEL",
-      "name": "Tata Motors Ltd",
       "score": 0.55,
-      "rsi": 25.0,
+      "rsi": 26.2,
       "ma_signal": "MA ↓"
     },
     {
-      "symbol": "TATASTEEL",
-      "name": "Tata Steel Ltd",
+      "symbol": "ASHOKA",
       "score": 0.55,
-      "rsi": 25.0,
-      "ma_signal": "MA ↓"
+      "rsi": 68.8,
+      "ma_signal": "MA ↑"
     },
     {
       "symbol": "M&M",
-      "name": "Mahindra & Mahindra Ltd",
       "score": 0.54,
-      "rsi": 60.7,
+      "rsi": 61.3,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "SILVERIETF",
-      "name": "ICICI Prudential Silver ETF",
       "score": 0.54,
-      "rsi": 38.7,
+      "rsi": 38.9,
       "ma_signal": "MA ↓↓"
     },
     {
-      "symbol": "ASHOKA",
-      "name": "Ashoka Buildcon Ltd",
-      "score": 0.51,
-      "rsi": 68.0,
-      "ma_signal": "MA ↑"
+      "symbol": "BSE",
+      "score": 0.53,
+      "rsi": 39.0,
+      "ma_signal": "MA ↓"
     },
     {
       "symbol": "VALIANTCO",
-      "name": "Valiant Communications Ltd",
       "score": 0.5,
       "rsi": 50,
       "ma_signal": "Insufficient data"
     },
     {
       "symbol": "TATAMOTORS",
-      "name": "Tata Motors Passenger Vehicles Ltd",
       "score": 0.5,
       "rsi": 50,
       "ma_signal": "Insufficient data"
     },
     {
+      "symbol": "TVSMOTOR",
+      "score": 0.49,
+      "rsi": 71.5,
+      "ma_signal": "MA ↑"
+    },
+    {
       "symbol": "GOLDBEES",
-      "name": "Nippon India ETF Gold Bees",
       "score": 0.49,
       "rsi": 38.7,
       "ma_signal": "MA ↓↓"
     },
     {
-      "symbol": "TVSMOTOR",
-      "name": "TVS Motor Company Ltd",
-      "score": 0.46,
-      "rsi": 70.6,
-      "ma_signal": "MA ↑"
-    },
-    {
       "symbol": "BDL",
-      "name": "Bharat Dynamics Ltd",
       "score": 0.46,
-      "rsi": 76.2,
+      "rsi": 77.8,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "INFY",
-      "name": "Infosys Ltd",
       "score": 0.45,
-      "rsi": 39.0,
+      "rsi": 38.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "ABB",
-      "name": "ABB India Ltd",
       "score": 0.44,
-      "rsi": 52.6,
+      "rsi": 53.2,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "BEL",
-      "name": "Bharat Electronics Ltd",
       "score": 0.44,
-      "rsi": 54.9,
+      "rsi": 54.6,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "SILVERADD",
-      "name": "DSP Silver ETF",
       "score": 0.44,
-      "rsi": 46.3,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "EICHERMOT",
-      "name": "Eicher Motors Ltd",
-      "score": 0.37,
-      "rsi": 44.9,
+      "rsi": 46.2,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "BRITANNIA",
-      "name": "Britannia Industries Ltd",
       "score": 0.36,
-      "rsi": 67.4,
+      "rsi": 67.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "RVNL",
-      "name": "Rail Vikas Nigam Ltd",
       "score": 0.33,
-      "rsi": 56.1,
+      "rsi": 55.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "KAYNES",
-      "name": "Kaynes Technology India Ltd",
-      "score": 0.29,
-      "rsi": 55.2,
+      "score": 0.33,
+      "rsi": 55.7,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "score": 0.32,
+      "rsi": 46.0,
       "ma_signal": "MA ↓↓"
     }
   ]
