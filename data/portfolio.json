@@ -1,11 +1,169 @@
 {
   "session_date": "2026-07-02",
-  "session_status": "Waiting · Market opens at 09:30",
+  "session_status": "Analysing · Buying at 10:00 AM",
   "last_updated": "09:29 AM",
-  "analysis_time": "--",
+  "analysis_time": "09:32 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
   "positions": [],
-  "activity_log": [],
-  "confidence_scores": []
+  "activity_log": [
+    {
+      "time": "09:31 AM",
+      "action": "Analysis started · calculating RSI, MA, momentum for all stocks",
+      "amount": 0,
+      "type": "info"
+    },
+    {
+      "time": "09:32 AM",
+      "action": "Analysis complete · Top 7: CGPOWER, ITI, ADANIGREEN, HAL, ENRIN, BSE, TATASTEEL",
+      "amount": 0,
+      "type": "info"
+    }
+  ],
+  "confidence_scores": [
+    {
+      "symbol": "CGPOWER",
+      "score": 0.66,
+      "rsi": 61.1,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "ITI",
+      "score": 0.66,
+      "rsi": 53.5,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "score": 0.62,
+      "rsi": 55.6,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "HAL",
+      "score": 0.62,
+      "rsi": 66.0,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "ENRIN",
+      "score": 0.58,
+      "rsi": 45.4,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "BSE",
+      "score": 0.57,
+      "rsi": 41.3,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "score": 0.55,
+      "rsi": 27.8,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "score": 0.55,
+      "rsi": 27.8,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "ASHOKA",
+      "score": 0.55,
+      "rsi": 69.0,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "M&M",
+      "score": 0.54,
+      "rsi": 61.3,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "score": 0.51,
+      "rsi": 69.6,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "VALIANTCO",
+      "score": 0.5,
+      "rsi": 50,
+      "ma_signal": "Insufficient data"
+    },
+    {
+      "symbol": "TATAMOTORS",
+      "score": 0.5,
+      "rsi": 50,
+      "ma_signal": "Insufficient data"
+    },
+    {
+      "symbol": "BDL",
+      "score": 0.46,
+      "rsi": 76.0,
+      "ma_signal": "MA ↑"
+    },
+    {
+      "symbol": "ABB",
+      "score": 0.44,
+      "rsi": 53.6,
+      "ma_signal": "MA ↓"
+    },
+    {
+      "symbol": "BEL",
+      "score": 0.44,
+      "rsi": 54.9,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "SILVERADD",
+      "score": 0.44,
+      "rsi": 47.1,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "SILVERIETF",
+      "score": 0.44,
+      "rsi": 47.1,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "INFY",
+      "score": 0.41,
+      "rsi": 37.1,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "GOLDBEES",
+      "score": 0.4,
+      "rsi": 45.6,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "score": 0.37,
+      "rsi": 44.8,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "RVNL",
+      "score": 0.36,
+      "rsi": 57.5,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "score": 0.33,
+      "rsi": 65.5,
+      "ma_signal": "MA ↓↓"
+    },
+    {
+      "symbol": "KAYNES",
+      "score": 0.33,
+      "rsi": 55.6,
+      "ma_signal": "MA ↓↓"
+    }
+  ]
 }
