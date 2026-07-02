@@ -1,7 +1,7 @@
 {
   "session_date": "2026-07-02",
   "session_status": "Live",
-  "last_updated": "11:01 AM",
+  "last_updated": "11:04 AM",
   "analysis_time": "09:32 AM",
   "sell_time": "15:20",
   "stop_loss_pct": 2,
@@ -13,12 +13,12 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 958.75,
-      "current_price": 967.4,
+      "current_price": 967.0,
       "qty": 78,
       "invested": 74782.5,
-      "current_value": 75457.2,
-      "pnl": 674.7,
-      "pnl_pct": 0.9,
+      "current_value": 75426.0,
+      "pnl": 643.5,
+      "pnl_pct": 0.86,
       "sold": false
     },
     {
@@ -28,27 +28,27 @@
       "confidence_score": 0.66,
       "signal": "Bullish",
       "buy_price": 301.25,
-      "current_price": 300.85,
+      "current_price": 300.65,
       "qty": 248,
       "invested": 74710.0,
-      "current_value": 74610.8,
-      "pnl": -99.2,
-      "pnl_pct": -0.13,
+      "current_value": 74561.2,
+      "pnl": -148.8,
+      "pnl_pct": -0.2,
       "sold": false
     },
     {
       "symbol": "ADANIGREEN",
       "name": "Adani Green Energy Ltd",
       "allocation_pct": 15,
-      "confidence_score": 0.66,
-      "signal": "Bullish",
+      "confidence_score": 0.62,
+      "signal": "Neutral",
       "buy_price": 1522.3,
-      "current_price": 1542.7,
+      "current_price": 1539.4,
       "qty": 49,
       "invested": 74592.7,
-      "current_value": 75592.3,
-      "pnl": 999.6,
-      "pnl_pct": 1.34,
+      "current_value": 75430.6,
+      "pnl": 837.9,
+      "pnl_pct": 1.12,
       "sold": false
     },
     {
@@ -58,12 +58,12 @@
       "confidence_score": 0.62,
       "signal": "Neutral",
       "buy_price": 4436.5,
-      "current_price": 4445.0,
+      "current_price": 4443.7,
       "qty": 16,
       "invested": 70984.0,
-      "current_value": 71120.0,
-      "pnl": 136.0,
-      "pnl_pct": 0.19,
+      "current_value": 71099.2,
+      "pnl": 115.2,
+      "pnl_pct": 0.16,
       "sold": false
     },
     {
@@ -73,12 +73,12 @@
       "confidence_score": 0.58,
       "signal": "Neutral",
       "buy_price": 3541.2,
-      "current_price": 3537.0,
+      "current_price": 3531.0,
       "qty": 21,
       "invested": 74365.2,
-      "current_value": 74277.0,
-      "pnl": -88.2,
-      "pnl_pct": -0.12,
+      "current_value": 74151.0,
+      "pnl": -214.2,
+      "pnl_pct": -0.29,
       "sold": false
     },
     {
@@ -88,12 +88,12 @@
       "confidence_score": 0.57,
       "signal": "Neutral",
       "buy_price": 3940.0,
-      "current_price": 3933.3,
+      "current_price": 3932.8,
       "qty": 19,
       "invested": 74860.0,
-      "current_value": 74732.7,
-      "pnl": -127.3,
-      "pnl_pct": -0.17,
+      "current_value": 74723.2,
+      "pnl": -136.8,
+      "pnl_pct": -0.18,
       "sold": false
     },
     {
@@ -103,12 +103,12 @@
       "confidence_score": 0.55,
       "signal": "Neutral",
       "buy_price": 186.8,
-      "current_price": 186.81,
+      "current_price": 186.68,
       "qty": 401,
       "invested": 74906.8,
-      "current_value": 74910.81,
-      "pnl": 4.01,
-      "pnl_pct": 0.01,
+      "current_value": 74858.68,
+      "pnl": -48.12,
+      "pnl_pct": -0.06,
       "sold": false
     }
   ],
@@ -182,87 +182,87 @@
   ],
   "confidence_scores": [
     {
-      "symbol": "ADANIGREEN",
-      "name": "Adani Green Energy Ltd",
-      "score": 0.66,
-      "rsi": 61.4,
-      "ma_signal": "MA ↑↑"
-    },
-    {
       "symbol": "CGPOWER",
       "name": "CG Power & Industrial Solutions Ltd",
       "score": 0.66,
-      "rsi": 64.1,
+      "rsi": 63.9,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ITI",
       "name": "ITI Ltd",
       "score": 0.66,
-      "rsi": 52.2,
+      "rsi": 51.9,
+      "ma_signal": "MA ↑↑"
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Ltd",
+      "score": 0.62,
+      "rsi": 60.7,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd",
       "score": 0.62,
-      "rsi": 67.5,
+      "rsi": 67.4,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Energy India Ltd",
       "score": 0.58,
-      "rsi": 46.1,
+      "rsi": 45.8,
       "ma_signal": "MA ↑↑"
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd",
       "score": 0.57,
-      "rsi": 40.8,
+      "rsi": 40.7,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Motors Ltd",
       "score": 0.55,
-      "rsi": 27.9,
+      "rsi": 27.3,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel Ltd",
       "score": 0.55,
-      "rsi": 27.9,
+      "rsi": 27.2,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "SILVERIETF",
       "name": "ICICI Prudential Silver ETF",
       "score": 0.54,
-      "rsi": 38.2,
+      "rsi": 37.7,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Company Ltd",
       "score": 0.51,
-      "rsi": 69.6,
+      "rsi": 69.7,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "ASHOKA",
       "name": "Ashoka Buildcon Ltd",
       "score": 0.51,
-      "rsi": 68.0,
+      "rsi": 68.3,
       "ma_signal": "MA ↑"
     },
     {
       "symbol": "M&M",
       "name": "Mahindra & Mahindra Ltd",
       "score": 0.51,
-      "rsi": 59.8,
+      "rsi": 59.9,
       "ma_signal": "MA ↑"
     },
     {
@@ -283,7 +283,7 @@
       "symbol": "GOLDBEES",
       "name": "Nippon India ETF Gold Bees",
       "score": 0.49,
-      "rsi": 36.9,
+      "rsi": 36.7,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -304,14 +304,14 @@
       "symbol": "ABB",
       "name": "ABB India Ltd",
       "score": 0.44,
-      "rsi": 54.7,
+      "rsi": 54.9,
       "ma_signal": "MA ↓"
     },
     {
       "symbol": "SILVERADD",
       "name": "DSP Silver ETF",
       "score": 0.44,
-      "rsi": 45.9,
+      "rsi": 45.4,
       "ma_signal": "MA ↓↓"
     },
     {
@@ -322,31 +322,31 @@
       "ma_signal": "MA ↓↓"
     },
     {
+      "symbol": "EICHERMOT",
+      "name": "Eicher Motors Ltd",
+      "score": 0.37,
+      "rsi": 44.9,
+      "ma_signal": "MA ↓↓"
+    },
+    {
       "symbol": "BRITANNIA",
       "name": "Britannia Industries Ltd",
-      "score": 0.36,
-      "rsi": 66.4,
+      "score": 0.33,
+      "rsi": 66.2,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "RVNL",
       "name": "Rail Vikas Nigam Ltd",
       "score": 0.33,
-      "rsi": 56.0,
-      "ma_signal": "MA ↓↓"
-    },
-    {
-      "symbol": "EICHERMOT",
-      "name": "Eicher Motors Ltd",
-      "score": 0.32,
-      "rsi": 45.1,
+      "rsi": 55.9,
       "ma_signal": "MA ↓↓"
     },
     {
       "symbol": "KAYNES",
       "name": "Kaynes Technology India Ltd",
       "score": 0.32,
-      "rsi": 54.5,
+      "rsi": 54.9,
       "ma_signal": "MA ↓↓"
     }
   ]
